@@ -1,0 +1,37 @@
+---
+kind: pipeline
+type: docker
+name: docker
+
+steps:
+- name: build_mod
+  image: debian:latest
+  commands:
+      - /usr/bin/apt update
+      - /usr/bin/apt install -y zip jq libxml2-utils
+      - /bin/bash bin/build.sh FS22_poettingerImpress125FCAoiEdition.zip
+- name: deploy
+  image: drillster/drone-rsync
+  settings:
+    hosts: 
+      from_secret: ssh_host
+    user: 
+      from_secret: ssh_username
+    source: dist/*
+    target: 
+      from_secret: ssh_path
+    recursive: true
+    delete: false
+    key:
+      from_secret: ssh_key
+- name: push commit
+  image: appleboy/drone-git-push
+  settings:
+    branch: main
+    remote: 
+      from_secret: gh_url
+    commit_message: "blubb"
+    force: true
+    commit: true
+
+  

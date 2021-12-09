@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="balerWrapper" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>IMPRESS 125FC PRO AoiEdition</name>
+        <specs>
+            <neededPower>130</neededPower>
+        </specs>
+        <functions>
+            <function>$l10n_function_baler</function>
+            <function>$l10n_function_baleWrapper</function>
+        </functions>
+        <image>store_impress125FCPro.png</image>
+        <price>78500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>POETTINGER</brand>
+        <category>balers</category>
+        <shopTranslationOffset>0 -0.016 0</shopTranslationOffset>
+        <shopRotationOffset>0.6 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>7014620</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1750326</indexBufferMemoryUsage>
+        <textureMemoryUsage>33705200</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_baler</typeDesc>
+        <filename>impress125FCPro.i3d</filename>
+        <size width="4" length="8" />
+        <speedLimit value="17" />
+        <components>
+            <component centerOfMass="0 0.8 -0.3" solverIterationCount="10" mass="6680" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="200" />
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="50" />
+            <joint component1="1" component2="2" node="componentJointPickup" rotLimit="0 0 0" transLimit="0 0 0" />
+            <joint component1="1" component2="3" node="baleTurnerComponentJoint" rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1"/>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="VREDESTEIN" saveId="VREDESTEIN_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/520_55R22_5.xml" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.8" repr="wheelFrontLeft"  forcePointRatio="0.45" initialCompression="40" suspTravel="0.2" spring="20" damper="30"/>
+                        <wheelChock parkingNode="wheelChock01" />
+                        <wheelChock parkingNode="wheelChock02" isInverted="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/520_55R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.8" repr="wheelFrontRight" forcePointRatio="0.45" initialCompression="40" suspTravel="0.2" spring="20" damper="30"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/520_55R22_5.xml" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.8" repr="wheelBackLeft"   forcePointRatio="0.45" initialCompression="40" suspTravel="0.2" spring="20" damper="30"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/520_55R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="1.8" repr="wheelBackRight"  forcePointRatio="0.45" initialCompression="40" suspTravel="0.2" spring="20" damper="30"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/15x6_00R6.xml" isLeft="true">
+                        <physics rotMin="-10" rotMax="10" restLoad="0.1" repr="wheelAxisLeft"  driveNode="leftPickupWheel"  useReprDirection="true" forcePointRatio="0.1" initialCompression="30" suspTravel="0.03" spring="16" damper="50" rotationDamping="0.0002" brakeFactor="0" versatileYRot="true" yOffset="0.03"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/15x6_00R6.xml" isLeft="false">
+                        <physics rotMin="-10" rotMax="10" restLoad="0.1" repr="wheelAxisRight" driveNode="rightPickupWheel" useReprDirection="true" forcePointRatio="0.1" initialCompression="30" suspTravel="0.03" spring="16" damper="50" rotationDamping="0.0002" brakeFactor="0" versatileYRot="true" yOffset="0.03"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color0>SHARED_DA_METAL_BLACK</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheelFrontLeft"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.285 0.285 0.285" />
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.285 0.285 0.285" />
+            <hub linkNode="wheelBackLeft"   filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.285 0.285 0.285" />
+            <hub linkNode="wheelBackRight"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.285 0.285 0.285" />
+            <hub linkNode="leftPickupWheel"  filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.132 0.132 0.132">
+                <color0 material="18">SHARED_WHITE1</color0>
+                <color1>-</color1>
+            </hub>
+            <hub linkNode="rightPickupWheel" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.132 0.132 0.132">
+                <color0 material="18">SHARED_WHITE1</color0>
+                <color1>-</color1>
+            </hub>
+        </hubs>
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="leftPickupWheel_vis" radius="0.2" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="rightPickupWheel_vis" radius="0.2" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="pickupRotationPart01" radius="0.2" groundReferenceNodeIndex="1" onlyActiveWhenLowered="true" rotateOnlyIfFillLevelIncreased="true" />
+    </speedRotatingParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailerLow" attacherHeight="0.6"/>
+        </inputAttacherJoints>
+
+        <support animationName="moveSupport" />
+        <brakeForce force="0.85"/>
+    </attachable>
+
+    <licensePlates>
+        <licensePlate node="licensePlate" position="BACK" preferedType="SQUARISH" placementArea="0.075 0.11 0.13 0.11"/>
+    </licensePlates>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.7" diameter="0.022" straighteningFactor="1.5">
+           <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.7" diameter="0.03" straighteningFactor="1.5">
+           <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric"  node="electric"  length="1.7" diameter="0.015" straighteningFactor="1.5">
+           <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airIn" length="1.7" diameter="0.02" straighteningFactor="1">
+            <objectChange node="airIn_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airOut" length="1.7" diameter="0.02" straighteningFactor="1">
+            <objectChange node="airOut_detached" visibilityActive="false" visibilityInactive="true" />
+        </hose>
+    </connectionHoses>
+
+     <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0"   linkNode="chockSupport1"            filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicIn01_connector"  filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicOut01_connector" filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|1" linkNode="electric_connector"       filename="$data/shared/connectionHoses/connectors.i3d" />
+    </dynamicallyLoadedParts>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" detachNode="ptoDetachNode" filename="$data/shared/assets/powerTakeOffs/walterscheidWWZ.xml"/>
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="470" neededMinPtoPower="40" neededMaxPtoPower="40"/>
+
+    <lights>
+        <sharedLight linkNode="sideMarker03Left" filename="$data/shared/assets/lights/lizard/sideMarker03_left.xml" />
+        <sharedLight linkNode="sideMarker03Right" filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml" />
+        <sharedLight linkNode="rearMultipointLight_03Left" filename="$data/shared/assets/lights/lizard/rearLight33_left.xml" />
+        <sharedLight linkNode="rearMultipointLight_03Right" filename="$data/shared/assets/lights/lizard/rearLight33_right.xml" />
+        <sharedLight linkNode="sideMarker_05Orange_01" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker_05Orange_02" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker_05Orange_03" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker_05Orange_04" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker_05White_01" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" />
+        <sharedLight linkNode="sideMarker_05White_02" lightTypes="0" filename="$data/shared/assets/lights/lizard/sideMarker05White.xml" />
+        <sharedLight linkNode="reflectorWhiteRound_02_01" filename="$data/shared/assets/reflectors/lizard/whiteRound_02.xml" />
+        <sharedLight linkNode="reflectorWhiteRound_02_02" filename="$data/shared/assets/reflectors/lizard/whiteRound_02.xml" />
+        <sharedLight linkNode="yellowRound_02_01" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+        <sharedLight linkNode="yellowRound_02_02" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+        <sharedLight linkNode="yellowRound_02_03" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+        <sharedLight linkNode="yellowRound_02_04" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+                <reverseLight node="reverseLight" />
+            </high>
+        </realLights>
+
+        <defaultLights>
+            <defaultLight shaderNode="defaultlight_static"   lightTypes="0" />
+            <defaultLight shaderNode="workllightBack_static" lightTypes="1" />
+        </defaultLights>
+
+        <beaconLights>
+            <beaconLight node="beaconLight03" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml" />
+        </beaconLights>
+    </lights>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReferenceNode" threshold="0.4" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="baler" functionName="processBalerArea" disableBackwards="false" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+
+    <animations>
+        <animation name="moveBaleToWrapper">
+            <!-- move grabber node back to start position since it was moved to bales position -->
+            <part node="baleGrabberNode" startTime="0.0" endTime="0.01" endTrans="0 0 0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapBase" startTime="0.0" endTime="0.75"  startRot="7.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+
+            <part node="baleTurnerArm03" startTime="0.0" endTime="0.01" startRot="0.0 -115.0 0.0" endRot="0.0 -115.0 0.0" />
+        </animation>
+
+        <animation name="wrapBale" resetOnStart="false">
+            <part node="baleWrapArms" startTime="0" endTime="8.0" startRot="0.0 0.0 0.0" endRot="0.0 -2160.0 0.0" tangentType="spline"/>
+            <part node="baleWrapNode" startTime="0.0" endTime="8.0" startRot="0.0 0.0 0.0" endRot="0.0 0.0 360.0" tangentType="spline"/>
+            <part node="baleWrapNodeFoil" startTime="0.0" endTime="8.0" startRot="0.0 0.0 0.0" endRot="0.0 0.0 360.0" tangentType="spline"/>
+
+            <part node="wrapGear01" startTime="0" endTime="8.0"  startRot="0.0 0.0 0.0" endRot="0.0 -21600.0 0.0" tangentType="spline"/>
+            <part node="wrapGear02" startTime="0" endTime="8.0"  startRot="0.0 0.0 0.0" endRot="0.0 -21600.0 0.0" tangentType="spline"/>
+
+            <part node="wrapperRoll01" startTime="0" endTime="8.0"  startRot="0.0 0.0 0.0" endRot="-2160.0 0.0 0.0" tangentType="spline"/>
+            <part node="wrapperRoll02" startTime="0" endTime="8.0"  startRot="0.0 0.0 0.0" endRot="-2160.0 0.0 0.0" tangentType="spline"/>
+
+            <part node="wrapBelt" startTime="0.0" endTime="8.0" shaderParameter="offsetUV" shaderStartValues="0 0 0 0" shaderEndValues="0 5 0 0" tangentType="spline"/>
+
+            <part node="leftFoilCutterArm01" startTime="6.8" endTime="7.5"  startRot="0.0 0.0 0.0" endRot="-22.0 0.0 0.0" />
+            <part node="leftFoilCutterArm01" startTime="8.0" endTime="9.0"  startRot="-22.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="rightFoilCutterArm01" startTime="6.8" endTime="7.5"  startRot="0.0 0.0 0.0" endRot="-22.0 0.0 0.0" />
+            <part node="rightFoilCutterArm01" startTime="8.0" endTime="9.0"  startRot="-22.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+
+            <part node="leftOverFoilLeft" startTime="0.0" endTime="8.0" visibility="false"/>
+            <part node="leftOverFoilLeft" startTime="8.0" endTime="8.99" visibility="true"/>
+            <part node="leftOverFoilLeft" startTime="8.99" endTime="9.00" visibility="false"/>
+
+            <part node="leftOverFoilRight" startTime="0.0" endTime="8.0" visibility="false"/>
+            <part node="leftOverFoilRight" startTime="8.0" endTime="8.99" visibility="true"/>
+            <part node="leftOverFoilRight" startTime="8.99" endTime="9.00" visibility="false"/>
+
+            <part node="wrapJointLeft01" startTime="8.0" endTime="9.0" animationClip="baleCut125Source" clipStartTime="0" clipEndTime="500" />
+
+            <part node="baleTurnerArm03" startTime="8.0" endTime="9.0"  startRot="0.0 -115.0 0.0" endRot="0.0 0.0 0.0" />
+            <part                        startTime="7.5" endTime="9.0" dependentAnimation="turnerArmRefAnimation" dependentAnimationStartTime="0"   dependentAnimationEndTime="1"/>
+        </animation>
+
+        <animation name="skipBaleWrappingFinished" resetOnStart="false">
+            <part node="baleTurnerArm03" startTime="0.5" endTime="1.5"  startRot="0.0 -115.0 0.0" endRot="0.0 0.0 0.0" />
+            <part                        startTime="0.0" endTime="1.5" dependentAnimation="turnerArmRefAnimation" dependentAnimationStartTime="0"   dependentAnimationEndTime="1"/>
+        </animation>
+
+        <animation name="dropBaleFromWrapper" resetOnStart="false">
+            <part node="baleWrapBase" startTime="0.0" endTime="1.0"  startRot="0.0 0.0 0.0" endRot="-45.0 0.0 0.0" />
+            <part node="baleWrapNode" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 359.978" />
+            <part node="baleWrapNode" startTime="0.00001" endTime="0.71"  startTrans="0.0 0.0 0.0" endTrans="0.154 0.105 0.0" startRot="0.0 0.0 359.978" endRot="0.0 0.0 344.499" />
+            <part node="baleWrapNode" startTime="0.71" endTime="1.0"  startTrans="0.154 0.105 0.0" endTrans="0.539 0.243 0.0" startRot="0.0 0.0 344.499" endRot="0.0 0.0 310.529" />
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="0.99"  volumeScale="1.3" pitchScale="0.7" fadeIn="0.01" fadeOut="0.02"/>
+            <sound template="clackVar6"             startTime="0.99"                 volumeScale="0.9" pitchScale="0.8" />
+            <sound template="sheetImp02"            startTime="0.99"                 volumeScale="1.8" pitchScale="0.8" />
+            <sound template="cylinderPunch"         startTime="0.99"                 volumeScale="0.2" pitchScale="2" />
+        </animation>
+
+        <animation name="dropBaleFromWrapperBaleOnEnd" resetOnStart="false">
+            <part node="baleWrapBase" startTime="0.0" endTime="1.0"  startRot="0.0 0.0 0.0" endRot="-40.0 0.0 0.0" />
+            <part node="baleWrapNode" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 359.978" />
+            <part node="baleWrapNode" startTime="0.00001" endTime="0.781"  startTrans="0.0 0.0 0.0" endTrans="0.154 0.105 0.0" startRot="0.0 0.0 359.978" endRot="0.0 0.0 344.499" />
+            <part node="baleWrapNode" startTime="0.781" endTime="0.998"  startTrans="0.154 0.105 0.0" endTrans="0.43 0.22 -0.0" startRot="0.0 0.0 344.499" endRot="0.0 0.0 321.423" />
+            <part node="baleWrapNode" startTime="0.998" endTime="1.1"  startTrans="0.43 0.22 -0.0" endTrans="0.562 0.281 -0.0" startRot="0.0 0.0 321.423" endRot="0.0 0.0 310.529" />
+            <part node="baleWrapNode" startTime="1.1" endTime="1.32"  startTrans="0.562 0.281 -0.0" endTrans="0.932 0.513 -0.0" startRot="0.0 0.0 310.529" endRot="0.0 0.0 272.692" />
+            <part node="baleWrapNode" startTime="1.32" endTime="1.54"  startTrans="0.932 0.513 -0.0" endTrans="1.211 0.587 0.372" startRot="0.0 0.0 272.692" endRot="-60.23 21.955 237.801" />
+            <part node="baleWrapNode" startTime="1.54" endTime="1.65"  startTrans="1.211 0.587 0.372" endTrans="1.559 0.528 0.577" startRot="-60.23 21.955 237.801" endRot="-90.345 32.932 220.356" />
+
+            <part                     startTime="0"   endTime="0.5" componentJointIndex="2" startRotMinLimit="0 0 0" startRotMaxLimit="0 0 0" endRotMinLimit="0 0 0" endRotMaxLimit="10 0 0"/>
+        </animation>
+
+        <animation name="resetWrapperAfterBaleDrop" resetOnStart="false">
+            <part node="baleWrapBase" startTime="0.0" endTime="1.0"  startRot="-45.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapBase" startTime="1.2" endTime="1.6"  startRot="0.0 0.0 0.0" endRot="7.0 0.0 0.0" />
+
+            <part node="baleWrapNode" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapNodeFoil" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapArms" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapGear01" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapGear02" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapperRoll01" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapperRoll02" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapBelt" startTime="0.0" endTime="0.00001" shaderParameter="offsetUV" shaderStartValues="0 5 0 0" shaderEndValues="0 0 0 0" />
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1.59"  volumeScale="1.3" pitchScale="0.7" fadeIn="0.01" fadeOut="0.02"/>
+            <sound template="clackVar6"             startTime="1.59"                 volumeScale="0.9" pitchScale="0.8" />
+            <sound template="clackVar4"             startTime="1.59"                 volumeScale="1"   pitchScale="1" />
+            <sound template="sheetImp02"            startTime="1.59"                 volumeScale="1.8" pitchScale="1.4" />
+        </animation>
+
+        <animation name="resetWrapperAfterBaleDropBaleOnEnd" resetOnStart="false">
+            <part node="baleWrapBase" startTime="0.0" endTime="1.0"  startRot="-45.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapBase" startTime="1.2" endTime="1.6"  startRot="0.0 0.0 0.0" endRot="7.0 0.0 0.0" />
+
+            <part node="baleTurnerArm03" startTime="2.25" endTime="3.0"  startRot="0.0 0.0 0.0" endRot="0.0 -115.0 0.0" />
+            <part                        startTime="1.25" endTime="2.25"  dependentAnimation="turnerArmRefAnimation" dependentAnimationStartTime="1"   dependentAnimationEndTime="0"/>
+            <part                        startTime="0"   endTime="1.6" componentJointIndex="2" endRotMinLimit="0 0 0" endRotMaxLimit="0 0 0"/>
+
+            <part node="baleWrapNode" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapNodeFoil" startTime="0" endTime="0.00001" endTrans="0.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleWrapArms" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapGear01" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapGear02" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapperRoll01" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapperRoll02" startTime="0" endTime="0.00001" endRot="0.0 0.0 0.0" />
+            <part node="wrapBelt" startTime="0.0" endTime="0.00001" shaderParameter="offsetUV" shaderStartValues="0 5 0 0" shaderEndValues="0 0 0 0" />
+        </animation>
+
+        <animation name="moveSupport">
+            <part node="supportTrans01"   startTime="0.0" endTime="0.2"  startTrans="0 0 0" endTrans="0 -0.62 0" />
+
+            <sound template="clackVar5"  startTime="0.1" direction="-1" volumeScale="0.8" pitchScale="1.4" linkNode="attacherJoint"/>
+            <sound template="latchSmall" startTime="0.1" direction="-1" volumeScale="0.3" pitchScale="1.4" linkNode="attacherJoint"/>
+        </animation>
+
+        <animation name="rotatePickup">
+            <part node="componentJointPickup"   startTime="0" endTime="1.5"  startRot="0 0 0" endRot="30 0 0" />
+            <part                               startTime="0"   endTime="1.5" componentJointIndex="1" startRotLimit="0 0 0" endRotLimit="15 0 0"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1.49" direction="1"  volumeScale="0.6" pitchScale="1" fadeIn="0.01" fadeOut="0.02" linkNode="pickup"/>
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1.49" direction="-1" volumeScale="1.2" pitchScale="1" fadeIn="0.01" fadeOut="0.02" linkNode="pickup"/>
+            <sound template="clackVar6"             startTime="1.49"                direction="1"  volumeScale="0.7" pitchScale="0.7"                            linkNode="pickup"/>
+            <sound template="clackVar6"             startTime="0.1"                 direction="-1" volumeScale="1.2" pitchScale="0.8"                            linkNode="pickup"/>
+            <sound template="sheetImp02"            startTime="0.1"                 direction="-1" volumeScale="1.5" pitchScale="1.5"                            linkNode="pickup"/>
+        </animation>
+
+        <animation name="unloadBale">
+            <part node="leftOverFoilLeft" startTime="0.0" endTime="0.01" visibility="false"/>
+            <part node="leftOverFoilRight" startTime="0.0" endTime="0.01" visibility="false"/>
+
+            <part node="backDoor" startTime="0.0" endTime="2.0"  startRot="0.0 0.0 0.0" endRot="82.0 0.0 0.0" />
+            <part node="backDoor" startTime="4.0" endTime="4.7"  startRot="82.0 0.0 0.0" endRot="44.73 0.0 0.0" />
+            <part node="baleMoverTrans" startTime="2.0" endTime="3.25"  startTrans="0.0 0.0 0.0" endTrans="0.0 0.0 -0.641" />
+
+            <part node="baleMoverRot" startTime="3.25" endTime="4.5"  startRot="0.0 0.0 0.0" endRot="-83.0 0.0 0.0" />
+
+            <part node="baleAnimNode" startTime="0.0" endTime="0.5"  startTrans="0.0 0.0 0.0" endTrans="0.081 -0.005 -0.0" startRot="0.0 0.0 0.0" endRot="0.0 0.0 13.522" />
+            <part node="baleAnimNode" startTime="0.5" endTime="1.0"  startTrans="0.081 -0.005 -0.0" endTrans="0.235 -0.06 -0.0" startRot="0.0 0.0 13.522" endRot="0.0 0.0 27.044" />
+            <part node="baleAnimNode" startTime="1.0" endTime="1.25"  startTrans="0.235 -0.06 -0.0" endTrans="0.371 -0.136 -0.0" startRot="0.0 0.0 27.044" endRot="0.0 0.0 39.847" />
+            <part node="baleAnimNode" startTime="1.25" endTime="1.75"  startTrans="0.371 -0.136 -0.0" endTrans="0.669 -0.316 -0.0" startRot="0.0 0.0 39.847" endRot="0.0 0.0 8.175" />
+            <part node="baleAnimNode" startTime="2.0" endTime="3.25"  startTrans="0.669 -0.316 -0.0" endTrans="1.392 -0.316 0.0" />
+            <part node="baleAnimNode" startTime="3.25" endTime="3.5"  startTrans="1.392 -0.316 0.0" endTrans="1.563 -0.102 0.0" startRot="0.0 0.0 8.175" endRot="0.0 0.0 -8.425" />
+            <part node="baleAnimNode" startTime="3.5" endTime="3.833"  startTrans="1.563 -0.102 0.0" endTrans="1.873 0.091 0.0" startRot="0.0 0.0 -8.425" endRot="0.0 0.0 -30.559" />
+            <part node="baleAnimNode" startTime="3.833" endTime="4.167"  startTrans="1.873 0.091 0.0" endTrans="2.232 0.153 0.0" startRot="0.0 0.0 -30.559" endRot="0.0 0.0 -52.692" />
+            <part node="baleAnimNode" startTime="4.167" endTime="4.7"  startTrans="2.232 0.153 0.0" endTrans="3.039 0.044 0.0" startRot="0.0 0.0 -52.692" endRot="0.0 0.0 -109.882" />
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1.99" volumeScale="2.5" pitchScale="0.8" />
+            <sound template="foldStartMed01"        startTime="0.01"                volumeScale="1.1" pitchScale="1.5" />
+            <sound template="BALER_EJECT"           startTime="1.5"                 volumeScale="0.8" pitchScale="1.2" />
+            <sound template="clackVar6"             startTime="2"                   volumeScale="1.5" pitchScale="0.8" />
+            <sound template="sheetImp02"            startTime="2"                   volumeScale="1.7" pitchScale="1.5" />
+        </animation>
+
+        <animation name="closeDoor" resetOnStart="false">
+            <part node="backDoor" startTime="0" endTime="0.8" startRot="44.73 0.0 0.0" endRot="0.0 0.0 0.0" />
+
+            <part node="baleMoverTrans" startTime="1.1" endTime="1.8"   startTrans="0.0 0.0 -0.641" endTrans="0.0 0.0 0.0" />
+            <part node="baleMoverRot"   startTime="0.5" endTime="0.626" startRot="-83.0 0.0 0.0" endRot="-69.928 0.0 0.0" />
+            <part node="baleMoverRot"   startTime="0.626" endTime="1.3" startRot="-69.928 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="baleAnimNode"   startTime="1.0" endTime="1.01"  startTrans="3.039 0.044 0.0" endTrans="0.0 0.0 0.0" startRot="0.0 0.0 -109.882" endRot="0.0 0.0 0.0" />
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1" volumeScale="1.5" pitchScale="0.8" />
+            <sound template="clackVar4"             startTime="2.49"             volumeScale="1.9" pitchScale="1" />
+            <sound template="metalClose"            startTime="0.8"              volumeScale="2"   pitchScale="0.6" />
+        </animation>
+
+        <animation name="turnerArmRefAnimation">
+            <part node="baleTurnerArmsRef" startTime="0.0" endTime="0.38"  startTrans="-0.267 0.0 0.017" endTrans="-0.025 0.0 0.015" />
+            <part node="baleTurnerArmsRef" startTime="0.38" endTime="0.52"  startTrans="-0.025 0.0 0.015" endTrans="0.065 0.0 0.024" />
+            <part node="baleTurnerArmsRef" startTime="0.52" endTime="0.74"  startTrans="0.065 0.0 0.024" endTrans="0.202 0.0 0.059" />
+            <part node="baleTurnerArmsRef" startTime="0.74" endTime="0.87"  startTrans="0.202 0.0 0.059" endTrans="0.288 0.0 0.073" />
+            <part node="baleTurnerArmsRef" startTime="0.87" endTime="1.0"  startTrans="0.288 0.0 0.073" endTrans="0.372 0.0 0.076" />
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="componentJointPickup" playSound="true">
+                <componentJoint index="1" />
+            </movingTool>
+            <movingTool node="backDoor" playSound="true">
+                <dependentPart node="backDoorHydraulic"/>
+                <dependentPart node="backDoorArm01"/>
+                <dependentPart node="backDoorPart01"/>
+            </movingTool>
+            <movingTool node="baleWrapBase" playSound="true">
+                <dependentPart node="baleDropperHydraulic"/>
+                <componentJoint index="2" />
+            </movingTool>
+            <movingTool node="baleMoverSidePlatesArm" playSound="true">
+                <dependentPart node="baleMoverHydraulic01"/>
+            </movingTool>
+            <movingTool node="baleMoverSidePlates" playSound="true">
+                <dependentPart node="baleMoverHydraulic02"/>
+            </movingTool>
+
+            <movingTool node="baleMoverRot" playSound="true">
+                <dependentPart node="baleMoverSidePlates"/>
+            </movingTool>
+            <movingTool node="leftFoilCutterArm01" playSound="true">
+                <dependentPart node="leftFoilCutterArm02"/>
+            </movingTool>
+            <movingTool node="rightFoilCutterArm01" playSound="true">
+                <dependentPart node="rightFoilCutterArm02"/>
+            </movingTool>
+
+            <movingTool node="wrapJointRight01">
+                <dependentPart node="leftOverJointRight01"/>
+                <dependentPart node="leftOverJointRight08"/>
+            </movingTool>
+            <movingTool node="wrapJointRight02">
+                <dependentPart node="leftOverJointRight02"/>
+                <dependentPart node="leftOverJointRight09"/>
+            </movingTool>
+            <movingTool node="wrapJointRight03">
+                <dependentPart node="leftOverJointRight03"/>
+                <dependentPart node="leftOverJointRight10"/>
+            </movingTool>
+            <movingTool node="wrapJointRight04">
+                <dependentPart node="leftOverJointRight04"/>
+                <dependentPart node="leftOverJointRight11"/>
+            </movingTool>
+            <movingTool node="wrapJointRight05">
+                <dependentPart node="leftOverJointRight05"/>
+                <dependentPart node="leftOverJointRight12"/>
+            </movingTool>
+            <movingTool node="wrapJointRight06">
+                <dependentPart node="leftOverJointRight06"/>
+                <dependentPart node="leftOverJointRight13"/>
+            </movingTool>
+            <movingTool node="wrapJointRight07">
+                <dependentPart node="leftOverJointRight07"/>
+                <dependentPart node="leftOverJointRight14"/>
+            </movingTool>
+
+            <movingTool node="wrapJointLeft01">
+                <dependentPart node="leftOverJointLeft01"/>
+                <dependentPart node="leftOverJointLeft08"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft02">
+                <dependentPart node="leftOverJointLeft02"/>
+                <dependentPart node="leftOverJointLeft09"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft03">
+                <dependentPart node="leftOverJointLeft03"/>
+                <dependentPart node="leftOverJointLeft10"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft04">
+                <dependentPart node="leftOverJointLeft04"/>
+                <dependentPart node="leftOverJointLeft11"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft05">
+                <dependentPart node="leftOverJointLeft05"/>
+                <dependentPart node="leftOverJointLeft12"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft06">
+                <dependentPart node="leftOverJointLeft06"/>
+                <dependentPart node="leftOverJointLeft13"/>
+            </movingTool>
+            <movingTool node="wrapJointLeft07">
+                <dependentPart node="leftOverJointLeft07"/>
+                <dependentPart node="leftOverJointLeft14"/>
+            </movingTool>
+
+            <movingTool node="baleTurnerArmsRef" playSound="true">
+                <dependentPart node="baleTurnerArm01"/>
+            </movingTool>
+            <movingTool node="baleTurnerArm03" playSound="true">
+                <dependentPart node="baleTurnerArm03Hydraulic"/>
+                <dependentPart node="baleTurnerArm03Col"/>
+            </movingTool>
+
+            <movingTool node="baleWrapArms">
+                <dependentPart node="wrapJointLeft01"/>
+                <dependentPart node="wrapJointLeft02"/>
+                <dependentPart node="wrapJointLeft03"/>
+                <dependentPart node="wrapJointLeft04"/>
+                <dependentPart node="wrapJointLeft05"/>
+                <dependentPart node="wrapJointLeft06"/>
+                <dependentPart node="wrapJointLeft07"/>
+
+                <dependentPart node="wrapJointRight01"/>
+                <dependentPart node="wrapJointRight02"/>
+                <dependentPart node="wrapJointRight03"/>
+                <dependentPart node="wrapJointRight04"/>
+                <dependentPart node="wrapJointRight05"/>
+                <dependentPart node="wrapJointRight06"/>
+                <dependentPart node="wrapJointRight07"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="wheelAxisLeft_vis" referenceFrame="wheelAxisLeft" limitedAxis="2" isActiveDirty="true" maxUpdateDistance="100"/>
+            <movingPart node="wheelAxisRight_vis" referenceFrame="wheelAxisRight" limitedAxis="2" isActiveDirty="true" maxUpdateDistance="100"/>
+
+            <movingPart node="pickupArm01" referencePoint="pickupArm01Ref" referenceFrame="impress125FCPro_main_component1" isActiveDirty="true" maxUpdateDistance="100">
+                <dependentPart node="pickup" />
+            </movingPart>
+            <movingPart node="pickup" localReferencePoint="pickupArm02" referencePoint="pickupArm02Ref" referenceFrame="pickupRefFrame">
+                <dependentPart node="pickupArm02" />
+                <dependentPart node="pickupHydraulic" />
+                <dependentPart node="pickupArm" />
+            </movingPart>
+            <movingPart node="pickupArm02" referencePoint="pickupArm02Ref" referenceFrame="pickupArm02Ref"/>
+            <movingPart node="pickupHydraulic" referencePoint="pickupHydraulicRef" referenceFrame="pickupHydraulicRef" >
+                <translatingPart node="pickupHydraulicPunch" />
+            </movingPart>
+            <movingPart node="pickupArm" referencePoint="pickupArmRef" referenceFrame="pickupArmRef" doInversedLineAlignment="true" doDirectionAlignment="false">
+                <orientationLine>
+                    <lineNode node="orientationLinePart01"/>
+                    <lineNode node="orientationLinePart02"/>
+                    <lineNode node="orientationLinePart03"/>
+                    <lineNode node="orientationLinePart04"/>
+                    <lineNode node="orientationLinePart05"/>
+                    <lineNode node="orientationLinePart06"/>
+                    <lineNode node="orientationLinePart07"/>
+                    <lineNode node="orientationLinePart08"/>
+                    <lineNode node="orientationLinePart09"/>
+                    <lineNode node="orientationLinePart10"/>
+                </orientationLine>
+            </movingPart>
+
+            <movingPart node="backDoorHydraulic" referencePoint="backDoorHydraulicRef" referenceFrame="backDoorHydraulicRef" >
+                <translatingPart node="backDoorHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="backDoorArm01" localReferencePoint="backDoorArm02" referencePoint="backDoorArm02Ref" referenceFrame="backDoorArm01RefFrame">
+                <dependentPart node="backDoorArm02" />
+            </movingPart>
+            <movingPart node="backDoorArm02" referencePoint="backDoorArm02Ref" referenceFrame="backDoorArm02Ref"/>
+
+            <movingPart node="backDoorPart01" localReferencePoint="backDoorPart02" referencePoint="backDoorPart02Ref" referenceFrame="backDoorPart01RefFrame">
+                <dependentPart node="backDoorPart02" />
+            </movingPart>
+            <movingPart node="backDoorPart02" referencePoint="backDoorPart02Ref" referenceFrame="backDoorPart02Ref"/>
+
+            <movingPart node="baleDropperHydraulic" referencePoint="baleDropperHydraulicRef" referenceFrame="baleDropperHydraulicRef">
+              <translatingPart node="baleDropperHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="baleMoverSidePlates" localReferencePoint="baleMoverSidePlatesArm" referencePoint="baleMoverSidePlatesRef" referenceFrame="baleMoverSidePlatesRefFrame">
+                <dependentPart node="baleMoverSidePlatesArm" />
+            </movingPart>
+            <movingPart node="baleMoverSidePlatesArm" referencePoint="baleMoverSidePlatesRef" referenceFrame="baleMoverSidePlatesRef"/>
+
+            <movingPart node="leftFoilCutterArm02" localReferencePoint="leftFoilCutterArm03" referencePoint="leftFoilCutterArm03Ref" referenceFrame="leftFoilCutterArm02RefFrame">
+                <dependentPart node="leftFoilCutterArm03" />
+                <dependentPart node="leftFoilCutterArm02Hydraulic" />
+            </movingPart>
+            <movingPart node="leftFoilCutterArm03" referencePoint="leftFoilCutterArm03Ref" referenceFrame="leftFoilCutterArm03Ref"/>
+            <movingPart node="leftFoilCutterArm02Hydraulic" referencePoint="leftFoilCutterArm02HydraulicRef" referenceFrame="leftFoilCutterArm02HydraulicRef">
+                <translatingPart node="leftFoilCutterArm02HydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="rightFoilCutterArm02" localReferencePoint="rightFoilCutterArm03" referencePoint="rightFoilCutterArm03Ref" referenceFrame="rightFoilCutterArm02RefFrame">
+                <dependentPart node="rightFoilCutterArm03" />
+                <dependentPart node="rightFoilCutterArm02Hydraulic" />
+            </movingPart>
+            <movingPart node="rightFoilCutterArm03" referencePoint="rightFoilCutterArm03Ref" referenceFrame="rightFoilCutterArm03Ref"/>
+            <movingPart node="rightFoilCutterArm02Hydraulic" referencePoint="rightFoilCutterArm02HydraulicRef" referenceFrame="rightFoilCutterArm02HydraulicRef">
+                <translatingPart node="rightFoilCutterArm02HydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="wrapJointLeft01" referencePoint="wrapJointLeft01Origin" referenceFrame="wrapJointLeft01Origin"/>
+            <movingPart node="wrapJointLeft02" referencePoint="wrapJointLeft02Origin" referenceFrame="wrapJointLeft02Origin"/>
+            <movingPart node="wrapJointLeft03" referencePoint="wrapJointLeft03Origin" referenceFrame="wrapJointLeft03Origin"/>
+            <movingPart node="wrapJointLeft04" referencePoint="wrapJointLeft04Origin" referenceFrame="wrapJointLeft04Origin"/>
+            <movingPart node="wrapJointLeft05" referencePoint="wrapJointLeft05Origin" referenceFrame="wrapJointLeft05Origin"/>
+            <movingPart node="wrapJointLeft06" referencePoint="wrapJointLeft06Origin" referenceFrame="wrapJointLeft06Origin"/>
+            <movingPart node="wrapJointLeft07" referencePoint="wrapJointLeft07Origin" referenceFrame="wrapJointLeft07Origin"/>
+
+            <movingPart node="wrapJointRight01" referencePoint="wrapJointRight01Origin" referenceFrame="wrapJointRight01Origin"/>
+            <movingPart node="wrapJointRight02" referencePoint="wrapJointRight02Origin" referenceFrame="wrapJointRight02Origin"/>
+            <movingPart node="wrapJointRight03" referencePoint="wrapJointRight03Origin" referenceFrame="wrapJointRight03Origin"/>
+            <movingPart node="wrapJointRight04" referencePoint="wrapJointRight04Origin" referenceFrame="wrapJointRight04Origin"/>
+            <movingPart node="wrapJointRight05" referencePoint="wrapJointRight05Origin" referenceFrame="wrapJointRight05Origin"/>
+            <movingPart node="wrapJointRight06" referencePoint="wrapJointRight06Origin" referenceFrame="wrapJointRight06Origin"/>
+            <movingPart node="wrapJointRight07" referencePoint="wrapJointRight07Origin" referenceFrame="wrapJointRight07Origin"/>
+
+            <movingPart node="baleTurnerArm01" localReferencePoint="baleTurnerArm02" referencePoint="baleTurnerArmsRef" referenceFrame="baleTurnerArm01RefFrame">
+                <dependentPart node="baleTurnerArm01Col" />
+                <dependentPart node="baleTurnerArm02" />
+            </movingPart>
+            <movingPart node="baleTurnerArm01Col" referenceFrame="baleTurnerArm01" doRotationAlignment="true" rotMultiplier="1" doDirectionAlignment="false"/>
+            <movingPart node="baleTurnerArm02" referencePoint="baleTurnerArmsRef" referenceFrame="baleTurnerArm02RefFrame">
+                <dependentPart node="baleTurnerArm02Hydraulic" />
+            </movingPart>
+            <movingPart node="baleTurnerArm02Hydraulic" referencePoint="baleTurnerArm02HydraulicRef" referenceFrame="baleTurnerArm02HydraulicRef">
+                <translatingPart node="baleTurnerArm02HydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="baleTurnerArm03Hydraulic" referencePoint="baleTurnerArm03HydraulicRef" referenceFrame="baleTurnerArm03HydraulicRef">
+                <translatingPart node="baleTurnerArm03HydraulicPunch" />
+            </movingPart>
+            <movingPart node="baleTurnerArm03Col" referenceFrame="baleTurnerArm03" doRotationAlignment="true" rotMultiplier="1" doDirectionAlignment="false"/>
+
+            <movingPart node="baleTurnerRot" referencePoint="baleTurnerRotRef" referenceFrame="baleTurnerRotRefFrame" isActiveDirty="true" maxUpdateDistance="100"/>
+        </movingParts>
+    </cylindered>
+
+    <pickup>
+        <animation name="rotatePickup" lowerSpeed="2" liftSpeed="-1" />
+    </pickup>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="windrow" capacity="4000">
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="0.86" maxFillLevel="1" needsTurnOn="true">
+                                <alarmSound template="ROLLBELT_ALARM" linkNode="impress125FCPro_main_component1" />
+                            </alarmTrigger>
+                        </alarmTriggers>
+                    </fillUnit>
+                         <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="windrow" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <turnOnVehicle>
+        <sounds>
+            <start template="ROLLBELT_WORK_START" />
+            <work template="ROLLBELT_LOOP" />
+            <stop template="ROLLBELT_WORK_STOP" />
+        </sounds>
+    </turnOnVehicle>
+
+    <baler maxPickupLitersPerSecond="350">
+            <buffer fillUnitIndex="2" capacityPercentage=".99" overloadingDuration="1.528" balerDisplayType="ROUNDBALE" fillMainUnitAfterOverload="true" />
+        <sounds>
+            <door template="ROLLBELT_DOOR" pitchScale="2"/>
+        </sounds>
+
+        <baleTypes>
+            <baleType isRoundBale="true" width="1.2" diameter="1.25">
+                <nodes baleNode="baleAnimNode" scaleNode="baleScaleNode" scaleComponents="0 1 1"/>
+                <animations unloadAnimation="unloadBale" dropAnimationTime="4.7"/>
+            </baleType>
+        </baleTypes>
+        <variableSpeedLimit changeInterval="1" minSpeedLimit="3" maxSpeedLimit="17">
+            <target fillType="grass_windrow"    targetLiterPerSecond="175" defaultSpeedLimit="8"/> <!-- wrapped -->
+            <target fillType="straw"            targetLiterPerSecond="400" defaultSpeedLimit="17"/>
+            <target fillType="dryGrass_windrow" targetLiterPerSecond="400" defaultSpeedLimit="15"/>
+        </variableSpeedLimit>
+        <baleAnimation closeAnimationName="closeDoor" />
+        <automaticDrop enabled="true" toggleable="false"/>
+
+        <fillEffect>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="PICKUPIN" linkNode="pickupEffectNode">
+                <motionPathEffect textureFilename="$data/vehicles/poettinger/impress185VCPro/pickupEffectArray.dds" numRows="12" rowLength="10" minFade="0.15" shapeScale="0.85"/>
+            </effectNode>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="PICKUPIN" linkNode="liftupEffectNode">
+                <motionPathEffect textureFilename="$data/vehicles/poettinger/impress185VCPro/liftupEffectArray.dds" numRows="10" rowLength="10" delay="0.35" shapeScale="0.8"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1"/>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.2" worldSpace="false"/>
+        </fillEffect>
+
+        <animationNodes>
+            <animationNode node="rotor01" rotSpeed="-700" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3"/>
+            <animationNode node="rotor02" rotSpeed="700" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="tines" rotSpeed="-500" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="auger01" rotSpeed="700" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="auger02" rotSpeed="-700" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll01" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll02" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll03" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll04" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll05" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll06" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll07" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll08" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll09" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll10" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll11" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll12" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll13" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll14" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll15" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll16" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+            <animationNode node="roll17" rotSpeed="-350" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" />
+
+            <animationNode node="disc01_01" rotSpeed="250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+            <animationNode node="disc01_02" rotSpeed="250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+            <animationNode node="disc01_03" rotSpeed="250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+            <animationNode node="disc02_01" rotSpeed="-250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+            <animationNode node="disc02_02" rotSpeed="250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+            <animationNode node="disc03_01" rotSpeed="250" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 0 1 0" shaderParameterName="offsetUV" />
+
+            <animationNode node="chain01" rotSpeed="-200"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+            <animationNode node="chain02" rotSpeed="-200"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+            <animationNode node="chain03" rotSpeed="-200"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+        </animationNodes>
+    </baler>
+
+    <baleWrapper>
+        <wrappingAnimationConfigurations title="$l10n_configuration_wrappingAnimation">
+            <wrappingAnimationConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <roundBaleWrapper>
+                    <animations>
+                        <dropFromWrapper animName="dropBaleFromWrapper" animSpeed="0.7" />
+                        <resetAfterDrop animName="resetWrapperAfterBaleDrop" animSpeed="1" />
+                    </animations>
+                </roundBaleWrapper>
+                <objectChange node="defaultConfiguration" visibilityActive="true" visibilityInactive="false"/>
+            </wrappingAnimationConfiguration>
+            <wrappingAnimationConfiguration name="$l10n_configuration_wrapperBaleOnEnd" price="2000">
+                <roundBaleWrapper>
+                    <animations>
+                        <dropFromWrapper animName="dropBaleFromWrapperBaleOnEnd" animSpeed="0.5" />
+                        <resetAfterDrop animName="resetWrapperAfterBaleDropBaleOnEnd" animSpeed="1" />
+                    </animations>
+                </roundBaleWrapper>
+                <objectChange node="baleTurnerConfiguration" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="hosesBaleTurner" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="baleTurnerArm01Col" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="baleTurnerArm03Col" compoundChildActive="true" compoundChildInactive="false"/>
+            </wrappingAnimationConfiguration>
+        </wrappingAnimationConfigurations>
+
+        <grabber node="baleGrabberNode" triggerNode="baleGrabberTrigger" nearestDistance="0.5" />
+        <roundBaleWrapper baleNode="baleWrapLinkNode" wrapperNode="baleWrapArms" wrapperRotAxis="2" wrappingTime="12" skipUnsupportedBales="true">
+            <animations>
+                <moveToWrapper animName="moveBaleToWrapper" animSpeed="1" reverseAfterMove="false"/>
+                <wrapBale animName="wrapBale" animSpeed="0.75"/>
+                <dropFromWrapper animName="dropBaleFromWrapper" animSpeed="1"/>
+                <resetAfterDrop animName="resetWrapperAfterBaleDrop" animSpeed="1" />
+            </animations>
+
+            <baleTypes>
+                <baleType width="1.2" diameter="1.25">
+                    <textures diffuse="impress125FCProBaleWrap125_diffuse.dds"
+                              normal="impress125FCProBaleWrap125_normal.dds"/>
+
+                    <wrappingFoilAnimation referenceNode="baleWrapArms" referenceAxis="2" minRot="0" maxRot="-2160" clipNode="wrapJointLeft01" clipName="baleWrap125Source" />
+                </baleType>
+            </baleTypes>
+
+            <wrappingState>
+                <key wrappingState="0.0000" time="0.0543" />
+                <key wrappingState="0.0160" time="0.0546" />
+                <key wrappingState="0.0160" time="0.0652" />
+                <key wrappingState="0.0410" time="0.0655" />
+                <key wrappingState="0.0410" time="0.0870" />
+                <key wrappingState="0.0430" time="0.0872" />
+                <key wrappingState="0.0430" time="0.1087" />
+                <key wrappingState="0.0690" time="0.1089" />
+                <key wrappingState="0.0690" time="0.1196" />
+                <key wrappingState="0.0730" time="0.1198" />
+                <key wrappingState="0.0730" time="0.1467" />
+                <key wrappingState="0.1000" time="0.1470" />
+                <key wrappingState="0.1000" time="0.1739" />
+                <key wrappingState="0.1020" time="0.1742" />
+                <key wrappingState="0.1020" time="0.1929" />
+                <key wrappingState="0.1300" time="0.1932" />
+                <key wrappingState="0.1300" time="0.2147" />
+                <key wrappingState="0.1350" time="0.2149" />
+                <key wrappingState="0.1350" time="0.2364" />
+                <key wrappingState="0.1580" time="0.2367" />
+                <key wrappingState="0.1580" time="0.2446" />
+                <key wrappingState="0.1600" time="0.2448" />
+                <key wrappingState="0.1600" time="0.2745" />
+                <key wrappingState="0.1880" time="0.2747" />
+                <key wrappingState="0.1880" time="0.2908" />
+                <key wrappingState="0.1930" time="0.2910" />
+                <key wrappingState="0.1930" time="0.3179" />
+                <key wrappingState="0.2168" time="0.3182" />
+                <key wrappingState="0.2170" time="0.3587" />
+                <key wrappingState="0.2460" time="0.3589" />
+                <key wrappingState="0.2460" time="0.3940" />
+                <key wrappingState="0.2500" time="0.3943" />
+                <key wrappingState="0.2500" time="0.4022" />
+                <key wrappingState="0.2750" time="0.4024" />
+                <key wrappingState="0.2750" time="0.4375" />
+                <key wrappingState="0.2800" time="0.4377" />
+                <key wrappingState="0.2800" time="0.4429" />
+                <key wrappingState="0.3100" time="0.4432" />
+                <key wrappingState="0.3100" time="0.4891" />
+                <key wrappingState="0.3400" time="0.4894" />
+            </wrappingState>
+
+            <sounds wrappingEndTime="0.888888889">
+                <start template="BALER_WRAPPING_START" linkNode="impress125FCPro_main_component1" />
+                <wrap template="BALE_WRAPPING_01" linkNode="impress125FCPro_main_component1" />
+                <stop template="BALE_WRAPPING_STOP" linkNode="impress125FCPro_main_component1" />
+            </sounds>
+        </roundBaleWrapper>
+    </baleWrapper>
+
+    <ai>
+        <allowTurnBackward value="false"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="3.2" height="2.75" length="6.9" lengthOffset="0.25"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-3.2" maxZ="2.5" yOffset="0.5" />
+    </foliageBending>
+
+    <wrappingColorConfigurations>
+        <wrappingColorConfiguration name="$l10n_ui_colorWhite" color="SHARED_WRAP_WHITE" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorBlack" color="SHARED_WRAP_BLACK" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorPink"  color="SHARED_WRAP_PINK" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorGreen" color="SHARED_WRAP_GREEN" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorBlue"  color="0.1845 0.5520 0.5972 1" price="0" />
+
+        <material name="silageWrap_mat" shaderParameter="colorMat0"/>
+    </wrappingColorConfigurations>
+
+    <baseMaterial>
+        <material name="Impress125FCPro_mat" baseNode="impress125FCPro_vis">
+            <shaderParameter name="colorMat0" value="POETTINGER_RED1"/>
+            <shaderParameter name="colorMat1" value="POETTINGER_YELLOW"/>
+            <shaderParameter name="colorMat2" value="POETTINGER_RED1"/>
+            <shaderParameter name="colorMat3" value="POETTINGER_YELLOW"/>
+            <shaderParameter name="colorMat4" value="POETTINGER_WHITE1"/>
+        </material>
+        <material name="silageWrap_mat" baseNode="baleWrap">
+            <shaderParameter name="colorMat0" value="SHARED_WRAP_WHITE" material="5"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="impress125FCPro_main_component1" node="0>" />
+        <i3dMapping id="impress125FCPro_vis" node="0>0" />
+        <i3dMapping id="supportTrans01" node="0>0|0|0" />
+        <i3dMapping id="ptoInputNode" node="0>0|0|1|0" />
+        <i3dMapping id="ptoDetachNode" node="0>0|0|1|1" />
+        <i3dMapping id="drawbar" node="0>0|0|2" />
+        <i3dMapping id="attacherJoint" node="0>0|0|2|0" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|3|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|3|0|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|0|3|0|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|3|1" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|3|1|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|0|3|1|0|0" />
+        <i3dMapping id="airIn" node="0>0|0|3|2" />
+        <i3dMapping id="airIn_detached" node="0>0|0|3|2|0" />
+        <i3dMapping id="airOut" node="0>0|0|3|3" />
+        <i3dMapping id="airOut_detached" node="0>0|0|3|3|0" />
+        <i3dMapping id="electric" node="0>0|0|3|4" />
+        <i3dMapping id="electric_detached" node="0>0|0|3|4|0" />
+        <i3dMapping id="electric_connector" node="0>0|0|3|4|0|0" />
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|1" />
+        <i3dMapping id="wheelBackLeft" node="0>0|1|2" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|3" />
+        <i3dMapping id="chockSupport" node="0>0|1|4" />
+        <i3dMapping id="wheelChock01" node="0>0|1|5" />
+        <i3dMapping id="chockSupport1" node="0>0|1|6" />
+        <i3dMapping id="wheelChock02" node="0>0|1|7" />
+        <i3dMapping id="yellowRound_02_01" node="0>0|2|0|0" />
+        <i3dMapping id="yellowRound_02_02" node="0>0|2|0|1" />
+        <i3dMapping id="yellowRound_02_03" node="0>0|2|0|2" />
+        <i3dMapping id="yellowRound_02_04" node="0>0|2|0|3" />
+        <i3dMapping id="reflectorWhiteRound_02_01" node="0>0|2|0|4" />
+        <i3dMapping id="reflectorWhiteRound_02_02" node="0>0|2|0|5" />
+        <i3dMapping id="sideMarker03Left" node="0>0|2|0|6" />
+        <i3dMapping id="sideMarker03Right" node="0>0|2|0|7" />
+        <i3dMapping id="rearMultipointLight_03Left" node="0>0|2|0|8" />
+        <i3dMapping id="rearMultipointLight_03Right" node="0>0|2|0|9" />
+        <i3dMapping id="sideMarker_05Orange_01" node="0>0|2|0|10" />
+        <i3dMapping id="sideMarker_05Orange_02" node="0>0|2|0|11" />
+        <i3dMapping id="sideMarker_05Orange_03" node="0>0|2|0|12" />
+        <i3dMapping id="sideMarker_05Orange_04" node="0>0|2|0|13" />
+        <i3dMapping id="sideMarker_05White_01" node="0>0|2|0|14" />
+        <i3dMapping id="sideMarker_05White_02" node="0>0|2|0|15" />
+        <i3dMapping id="workingLightSquare_02" node="0>0|2|0|16" />
+        <i3dMapping id="defaultlight_static" node="0>0|2|1|0" />
+        <i3dMapping id="workllightBack_static" node="0>0|2|1|1" />
+        <i3dMapping id="lightsGlass_static" node="0>0|2|1|2|1" />
+        <i3dMapping id="beaconLight03" node="0>0|2|2" />
+        <i3dMapping id="backLightsHigh1" node="0>0|2|3|0" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|4|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|2|4|1" />
+        <i3dMapping id="reverseLight" node="0>0|2|5|0" />
+        <i3dMapping id="pickup" node="0>0|3|0|0" />
+        <i3dMapping id="pickupArm02" node="0>0|3|0|0|0" />
+        <i3dMapping id="tines" node="0>0|3|0|0|1" />
+        <i3dMapping id="pickupArmRef" node="0>0|3|0|0|2" />
+        <i3dMapping id="pickupHydraulicRef" node="0>0|3|0|0|3" />
+        <i3dMapping id="smokeEmitter" node="0>0|3|0|0|4|0" />
+        <i3dMapping id="pickupEffectNode" node="0>0|3|0|0|4|1" />
+        <i3dMapping id="disc02_02" node="0>0|3|0|0|5" />
+        <i3dMapping id="disc01_03" node="0>0|3|0|0|6" />
+        <i3dMapping id="chain03" node="0>0|3|0|0|8" />
+        <i3dMapping id="pickupArm01" node="0>0|3|0|1" />
+        <i3dMapping id="pickupArm02Ref" node="0>0|3|0|1|0" />
+        <i3dMapping id="wheelAxisLeft_vis" node="0>0|3|0|1|1|0" />
+        <i3dMapping id="leftPickupWheel_vis" node="0>0|3|0|1|1|0|0|0" />
+        <i3dMapping id="wheelAxisRight_vis" node="0>0|3|0|1|2|0" />
+        <i3dMapping id="rightPickupWheel_vis" node="0>0|3|0|1|2|0|0|0" />
+        <i3dMapping id="pickupArm" node="0>0|3|0|2" />
+        <i3dMapping id="orientationLine" node="0>0|3|0|2|0" />
+        <i3dMapping id="orientationLinePart01" node="0>0|3|0|2|0|0" />
+        <i3dMapping id="orientationLinePart02" node="0>0|3|0|2|0|1" />
+        <i3dMapping id="orientationLinePart03" node="0>0|3|0|2|0|2" />
+        <i3dMapping id="orientationLinePart04" node="0>0|3|0|2|0|3" />
+        <i3dMapping id="orientationLinePart05" node="0>0|3|0|2|0|4" />
+        <i3dMapping id="orientationLinePart06" node="0>0|3|0|2|0|5" />
+        <i3dMapping id="orientationLinePart07" node="0>0|3|0|2|0|6" />
+        <i3dMapping id="orientationLinePart08" node="0>0|3|0|2|0|7" />
+        <i3dMapping id="orientationLinePart09" node="0>0|3|0|2|0|8" />
+        <i3dMapping id="orientationLinePart10" node="0>0|3|0|2|0|9" />
+        <i3dMapping id="pickupRotationPart01" node="0>0|3|0|2|1" />
+        <i3dMapping id="pickupRefFrame" node="0>0|3|0|3" />
+        <i3dMapping id="pickupHydraulic" node="0>0|3|0|4" />
+        <i3dMapping id="pickupHydraulicPunch" node="0>0|3|0|4|0" />
+        <i3dMapping id="backDoor" node="0>0|3|1|0" />
+        <i3dMapping id="backDoorHydraulicRef" node="0>0|3|1|0|0" />
+        <i3dMapping id="backDoorArm02Ref" node="0>0|3|1|0|1" />
+        <i3dMapping id="roll03" node="0>0|3|1|0|2|0" />
+        <i3dMapping id="roll04" node="0>0|3|1|0|2|1" />
+        <i3dMapping id="roll05" node="0>0|3|1|0|2|2" />
+        <i3dMapping id="roll06" node="0>0|3|1|0|2|3" />
+        <i3dMapping id="roll07" node="0>0|3|1|0|2|4" />
+        <i3dMapping id="roll08" node="0>0|3|1|0|2|5" />
+        <i3dMapping id="roll09" node="0>0|3|1|0|2|6" />
+        <i3dMapping id="roll10" node="0>0|3|1|0|2|7" />
+        <i3dMapping id="roll11" node="0>0|3|1|0|2|8" />
+        <i3dMapping id="roll12" node="0>0|3|1|0|2|9" />
+        <i3dMapping id="backDoorPart01" node="0>0|3|1|0|3" />
+        <i3dMapping id="backDoorPart02" node="0>0|3|1|0|3|0" />
+        <i3dMapping id="backDoorPart01RefFrame" node="0>0|3|1|0|4" />
+        <i3dMapping id="disc01_02" node="0>0|3|1|0|5|1" />
+        <i3dMapping id="chain01" node="0>0|3|1|0|6" />
+        <i3dMapping id="backDoorHydraulic" node="0>0|3|1|1" />
+        <i3dMapping id="backDoorHydraulicPunch" node="0>0|3|1|1|0" />
+        <i3dMapping id="backDoorArm01RefFrame" node="0>0|3|1|2" />
+        <i3dMapping id="backDoorArm01" node="0>0|3|1|3" />
+        <i3dMapping id="backDoorArm02" node="0>0|3|1|3|0" />
+        <i3dMapping id="backDoorPart02Ref" node="0>0|3|1|4" />
+        <i3dMapping id="baleWrapBase" node="0>0|3|2|0" />
+        <i3dMapping id="baleWrapNode" node="0>0|3|2|0|0|0" />
+        <i3dMapping id="baleWrapLinkNode" node="0>0|3|2|0|0|0|0" />
+        <i3dMapping id="baleGrabberNode" node="0>0|3|2|0|0|0|1|0" />
+        <i3dMapping id="baleGrabberTrigger" node="0>0|3|2|0|0|0|1|0|0" />
+        <i3dMapping id="baleWrapNodeFoil" node="0>0|3|2|0|0|1" />
+        <i3dMapping id="wrapJointLeft01" node="0>0|3|2|0|0|1|0|0|0" />
+        <i3dMapping id="wrapJointLeft02" node="0>0|3|2|0|0|1|0|0|1" />
+        <i3dMapping id="wrapJointLeft03" node="0>0|3|2|0|0|1|0|0|2" />
+        <i3dMapping id="wrapJointLeft04" node="0>0|3|2|0|0|1|0|0|3" />
+        <i3dMapping id="wrapJointLeft05" node="0>0|3|2|0|0|1|0|0|4" />
+        <i3dMapping id="wrapJointLeft06" node="0>0|3|2|0|0|1|0|0|5" />
+        <i3dMapping id="wrapJointLeft07" node="0>0|3|2|0|0|1|0|0|6" />
+        <i3dMapping id="leftOverJointLeft08" node="0>0|3|2|0|0|1|0|0|7" />
+        <i3dMapping id="leftOverJointLeft09" node="0>0|3|2|0|0|1|0|0|8" />
+        <i3dMapping id="leftOverJointLeft10" node="0>0|3|2|0|0|1|0|0|9" />
+        <i3dMapping id="leftOverJointLeft11" node="0>0|3|2|0|0|1|0|0|10" />
+        <i3dMapping id="leftOverJointLeft12" node="0>0|3|2|0|0|1|0|0|11" />
+        <i3dMapping id="leftOverJointLeft13" node="0>0|3|2|0|0|1|0|0|12" />
+        <i3dMapping id="leftOverJointLeft14" node="0>0|3|2|0|0|1|0|0|13" />
+        <i3dMapping id="leftOverJointLeft01" node="0>0|3|2|0|0|1|0|0|14" />
+        <i3dMapping id="leftOverJointLeft02" node="0>0|3|2|0|0|1|0|0|15" />
+        <i3dMapping id="leftOverJointLeft03" node="0>0|3|2|0|0|1|0|0|16" />
+        <i3dMapping id="leftOverJointLeft04" node="0>0|3|2|0|0|1|0|0|17" />
+        <i3dMapping id="leftOverJointLeft05" node="0>0|3|2|0|0|1|0|0|18" />
+        <i3dMapping id="leftOverJointLeft06" node="0>0|3|2|0|0|1|0|0|19" />
+        <i3dMapping id="leftOverJointLeft07" node="0>0|3|2|0|0|1|0|0|20" />
+        <i3dMapping id="wrapJointRight01" node="0>0|3|2|0|0|1|0|1|0" />
+        <i3dMapping id="wrapJointRight02" node="0>0|3|2|0|0|1|0|1|1" />
+        <i3dMapping id="wrapJointRight03" node="0>0|3|2|0|0|1|0|1|2" />
+        <i3dMapping id="wrapJointRight04" node="0>0|3|2|0|0|1|0|1|3" />
+        <i3dMapping id="wrapJointRight05" node="0>0|3|2|0|0|1|0|1|4" />
+        <i3dMapping id="wrapJointRight06" node="0>0|3|2|0|0|1|0|1|5" />
+        <i3dMapping id="wrapJointRight07" node="0>0|3|2|0|0|1|0|1|6" />
+        <i3dMapping id="leftOverJointRight08" node="0>0|3|2|0|0|1|0|1|7" />
+        <i3dMapping id="leftOverJointRight09" node="0>0|3|2|0|0|1|0|1|8" />
+        <i3dMapping id="leftOverJointRight10" node="0>0|3|2|0|0|1|0|1|9" />
+        <i3dMapping id="leftOverJointRight11" node="0>0|3|2|0|0|1|0|1|10" />
+        <i3dMapping id="leftOverJointRight12" node="0>0|3|2|0|0|1|0|1|11" />
+        <i3dMapping id="leftOverJointRight13" node="0>0|3|2|0|0|1|0|1|12" />
+        <i3dMapping id="leftOverJointRight14" node="0>0|3|2|0|0|1|0|1|13" />
+        <i3dMapping id="leftOverJointRight01" node="0>0|3|2|0|0|1|0|1|14" />
+        <i3dMapping id="leftOverJointRight02" node="0>0|3|2|0|0|1|0|1|15" />
+        <i3dMapping id="leftOverJointRight03" node="0>0|3|2|0|0|1|0|1|16" />
+        <i3dMapping id="leftOverJointRight04" node="0>0|3|2|0|0|1|0|1|17" />
+        <i3dMapping id="leftOverJointRight05" node="0>0|3|2|0|0|1|0|1|18" />
+        <i3dMapping id="leftOverJointRight06" node="0>0|3|2|0|0|1|0|1|19" />
+        <i3dMapping id="leftOverJointRight07" node="0>0|3|2|0|0|1|0|1|20" />
+        <i3dMapping id="baleWrapArms" node="0>0|3|2|0|1" />
+        <i3dMapping id="wrapJointLeft01Origin" node="0>0|3|2|0|1|0|0" />
+        <i3dMapping id="wrapJointLeft02Origin" node="0>0|3|2|0|1|0|1" />
+        <i3dMapping id="wrapJointLeft03Origin" node="0>0|3|2|0|1|0|2" />
+        <i3dMapping id="wrapJointLeft04Origin" node="0>0|3|2|0|1|0|3" />
+        <i3dMapping id="wrapJointLeft05Origin" node="0>0|3|2|0|1|0|4" />
+        <i3dMapping id="wrapJointLeft06Origin" node="0>0|3|2|0|1|0|5" />
+        <i3dMapping id="wrapJointLeft07Origin" node="0>0|3|2|0|1|0|6" />
+        <i3dMapping id="wrapJointRight01Origin" node="0>0|3|2|0|1|0|7" />
+        <i3dMapping id="wrapJointRight02Origin" node="0>0|3|2|0|1|0|8" />
+        <i3dMapping id="wrapJointRight03Origin" node="0>0|3|2|0|1|0|9" />
+        <i3dMapping id="wrapJointRight04Origin" node="0>0|3|2|0|1|0|10" />
+        <i3dMapping id="wrapJointRight05Origin" node="0>0|3|2|0|1|0|11" />
+        <i3dMapping id="wrapJointRight06Origin" node="0>0|3|2|0|1|0|12" />
+        <i3dMapping id="wrapJointRight07Origin" node="0>0|3|2|0|1|0|13" />
+        <i3dMapping id="leftOverJointsLeftRefFrame" node="0>0|3|2|0|1|0|14" />
+        <i3dMapping id="leftOverJointsRightRefFrame" node="0>0|3|2|0|1|0|15" />
+        <i3dMapping id="baleWrap" node="0>0|3|2|0|1|1|0" />
+        <i3dMapping id="leftFoilCutterArm01" node="0>0|3|2|0|2|0" />
+        <i3dMapping id="leftFoilCutterArm02RefFrame" node="0>0|3|2|0|2|0|0" />
+        <i3dMapping id="leftFoilCutterArm02" node="0>0|3|2|0|2|0|0|0" />
+        <i3dMapping id="leftFoilCutterArm03" node="0>0|3|2|0|2|0|0|0|0" />
+        <i3dMapping id="leftFoilCutterArm02HydraulicRef" node="0>0|3|2|0|2|0|0|0|1" />
+        <i3dMapping id="leftFoilCutterArm02Hydraulic" node="0>0|3|2|0|2|0|1" />
+        <i3dMapping id="leftFoilCutterArm02HydraulicPunch" node="0>0|3|2|0|2|0|1|0" />
+        <i3dMapping id="leftFoilCutterArm03Ref" node="0>0|3|2|0|2|1" />
+        <i3dMapping id="rightFoilCutterArm01" node="0>0|3|2|0|3|0" />
+        <i3dMapping id="rightFoilCutterArm02RefFrame" node="0>0|3|2|0|3|0|0" />
+        <i3dMapping id="rightFoilCutterArm02" node="0>0|3|2|0|3|0|0|0" />
+        <i3dMapping id="rightFoilCutterArm03" node="0>0|3|2|0|3|0|0|0|0" />
+        <i3dMapping id="rightFoilCutterArm02HydraulicRef" node="0>0|3|2|0|3|0|0|0|1" />
+        <i3dMapping id="rightFoilCutterArm02Hydraulic" node="0>0|3|2|0|3|0|1" />
+        <i3dMapping id="rightFoilCutterArm02HydraulicPunch" node="0>0|3|2|0|3|0|1|0" />
+        <i3dMapping id="rightFoilCutterArm03Ref" node="0>0|3|2|0|3|1" />
+        <i3dMapping id="wrapperRoll01" node="0>0|3|2|0|4|0" />
+        <i3dMapping id="wrapperRoll02" node="0>0|3|2|0|4|1" />
+        <i3dMapping id="wrapGear01" node="0>0|3|2|0|4|2" />
+        <i3dMapping id="wrapGear02" node="0>0|3|2|0|4|3" />
+        <i3dMapping id="wrapBelt" node="0>0|3|2|0|5" />
+        <i3dMapping id="defaultConfiguration" node="0>0|3|2|0|6|0" />
+        <i3dMapping id="wrapperRoll03" node="0>0|3|2|0|6|0|0" />
+        <i3dMapping id="baleTurnerConfiguration" node="0>0|3|2|0|6|1" />
+        <i3dMapping id="baleTurnerComponentJoint" node="0>0|3|2|0|6|1|0" />
+        <i3dMapping id="baleTurnerRot" node="0>0|3|2|0|6|1|1" />
+        <i3dMapping id="baleTurnerArm01RefFrame" node="0>0|3|2|0|6|1|1|0" />
+        <i3dMapping id="baleTurnerArm01" node="0>0|3|2|0|6|1|1|0|0" />
+        <i3dMapping id="baleTurnerArm02RefFrame" node="0>0|3|2|0|6|1|1|0|0|0" />
+        <i3dMapping id="baleTurnerArm02" node="0>0|3|2|0|6|1|1|0|0|0|0" />
+        <i3dMapping id="baleTurnerArm02HydraulicRef" node="0>0|3|2|0|6|1|1|0|0|0|0|0" />
+        <i3dMapping id="baleTurnerArm03" node="0>0|3|2|0|6|1|1|0|0|1|0" />
+        <i3dMapping id="baleTurnerArm03HydraulicRef" node="0>0|3|2|0|6|1|1|0|0|1|0|0" />
+        <i3dMapping id="baleTurnerArm03Hydraulic" node="0>0|3|2|0|6|1|1|0|0|2" />
+        <i3dMapping id="baleTurnerArm03HydraulicPunch" node="0>0|3|2|0|6|1|1|0|0|2|0" />
+        <i3dMapping id="baleTurnerArm02Hydraulic" node="0>0|3|2|0|6|1|1|1" />
+        <i3dMapping id="baleTurnerArm02HydraulicPunch" node="0>0|3|2|0|6|1|1|1|0" />
+        <i3dMapping id="baleTurnerArmsRef" node="0>0|3|2|0|6|1|1|2" />
+        <i3dMapping id="baleTurnerRotRefFrame" node="0>0|3|2|0|6|1|2" />
+        <i3dMapping id="baleDropperHydraulicRef" node="0>0|3|2|0|7" />
+        <i3dMapping id="baleDropperHydraulic" node="0>0|3|2|1" />
+        <i3dMapping id="baleDropperHydraulicPunch" node="0>0|3|2|1|0" />
+        <i3dMapping id="baleMoverTrans" node="0>0|3|2|2" />
+        <i3dMapping id="baleMoverRot" node="0>0|3|2|2|0" />
+        <i3dMapping id="baleMoverSidePlatesRefFrame" node="0>0|3|2|2|0|0" />
+        <i3dMapping id="baleMoverSidePlates" node="0>0|3|2|2|0|0|0" />
+        <i3dMapping id="baleMoverSidePlatesArm" node="0>0|3|2|2|0|0|0|0" />
+        <i3dMapping id="baleMoverHydraulic02Ref" node="0>0|3|2|2|0|1" />
+        <i3dMapping id="baleMoverHydraulic01" node="0>0|3|2|2|1" />
+        <i3dMapping id="baleMoverHydraulic01Punch" node="0>0|3|2|2|1|0" />
+        <i3dMapping id="baleMoverHydraulic02" node="0>0|3|2|2|2" />
+        <i3dMapping id="baleMoverHydraulic02Punch" node="0>0|3|2|2|2|0" />
+        <i3dMapping id="baleMoverSidePlatesRef" node="0>0|3|2|2|3" />
+        <i3dMapping id="baleMoverHydraulic01Ref" node="0>0|3|2|3" />
+        <i3dMapping id="rotor02" node="0>0|3|3|0" />
+        <i3dMapping id="rotor01" node="0>0|3|3|1" />
+        <i3dMapping id="auger02" node="0>0|3|3|2" />
+        <i3dMapping id="auger01" node="0>0|3|3|3" />
+        <i3dMapping id="disc01_01" node="0>0|3|3|4" />
+        <i3dMapping id="disc02_01" node="0>0|3|3|5" />
+        <i3dMapping id="disc03_01" node="0>0|3|3|6" />
+        <i3dMapping id="chain02" node="0>0|3|3|7" />
+        <i3dMapping id="roll01" node="0>0|3|3|8|0" />
+        <i3dMapping id="roll02" node="0>0|3|3|8|1" />
+        <i3dMapping id="roll13" node="0>0|3|3|8|2" />
+        <i3dMapping id="roll14" node="0>0|3|3|8|3" />
+        <i3dMapping id="roll15" node="0>0|3|3|8|4" />
+        <i3dMapping id="roll16" node="0>0|3|3|8|5" />
+        <i3dMapping id="roll17" node="0>0|3|3|8|6" />
+        <i3dMapping id="workAreaStart" node="0>0|4|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|4|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|4|2" />
+        <i3dMapping id="liftupEffectNode" node="0>0|5" />
+        <i3dMapping id="componentJointPickup" node="0>0|6" />
+        <i3dMapping id="wrapperBaleDropAnimNode" node="0>0|7|0" />
+        <i3dMapping id="baleScaleNode" node="0>0|7|1" />
+        <i3dMapping id="baleAnimNode" node="0>0|7|1|0|0" />
+        <i3dMapping id="balerBaleNode" node="0>0|7|2" />
+        <i3dMapping id="licensePlate" node="0>0|10" />
+        <i3dMapping id="hosesBaleTurner" node="0>1|3" />
+        <i3dMapping id="wrapFoilLeft" node="0>1|5" />
+        <i3dMapping id="wrapFoilRight" node="0>1|6" />
+        <i3dMapping id="leftOverFoilLeft" node="0>1|7" />
+        <i3dMapping id="leftOverFoilRight" node="0>1|8" />
+        <i3dMapping id="impress125FCPro_pickup_component2" node="1>" />
+        <i3dMapping id="groundReferenceNode" node="1>0" />
+        <i3dMapping id="pickupArm01Ref" node="1>1" />
+        <i3dMapping id="wheelAxisRight" node="1>2|0" />
+        <i3dMapping id="rightPickupWheel" node="1>2|0|0|0" />
+        <i3dMapping id="wheelAxisLeft" node="1>3|0" />
+        <i3dMapping id="leftPickupWheel" node="1>3|0|0|0" />
+        <i3dMapping id="baleTurnerArm01Col" node="2>0|0" />
+        <i3dMapping id="baleTurnerArm03Col" node="2>0|0|0|0" />
+        <i3dMapping id="baleTurnerRotRef" node="2>1" />
+    </i3dMappings>
+</vehicle>

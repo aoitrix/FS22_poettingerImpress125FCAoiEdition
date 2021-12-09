@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="impress125FCPro" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="14" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="26" filename="$data/shared/assets/assetLibraryStickers_diffuse.png" />
+    <File fileId="10" filename="$data/shared/assets/beaconLights/lizard/beaconLight03.i3d" />
+    <File fileId="6" filename="$data/shared/assets/lights/lizard/rearLight33.i3d" />
+    <File fileId="5" filename="$data/shared/assets/lights/lizard/sideMarker03.i3d" />
+    <File fileId="7" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.i3d" />
+    <File fileId="8" filename="$data/shared/assets/lights/lizard/sideMarker06White.i3d" />
+    <File fileId="9" filename="$data/shared/assets/lights/lizard/workingLight09.i3d" />
+    <File fileId="4" filename="$data/shared/assets/reflectors/lizard/whiteRound_02.i3d" />
+    <File fileId="3" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.i3d" />
+    <File fileId="2" filename="$data/shared/assets/wheelChocks/wheelChock01.i3d" />
+    <File fileId="1" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d" />
+    <File fileId="41" filename="$data/shared/clearPlastic_diffuse.png" />
+    <File fileId="25" filename="$data/shared/default_normal.png" />
+    <File fileId="42" filename="$data/shared/silageWrap_diffuse.png" />
+    <File fileId="43" filename="$data/shared/silageWrap_vmask.png" />
+    <File fileId="37" filename="$data/shared/window_diffuse.png" />
+    <File fileId="38" filename="$data/shared/window_vmask.png" />
+    <File fileId="30" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc1_diffuse.png" />
+    <File fileId="31" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc1_normal.png" />
+    <File fileId="32" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc1_vmask.png" />
+    <File fileId="27" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc2_diffuse.png" />
+    <File fileId="28" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc2_normal.png" />
+    <File fileId="29" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc2_vmask.png" />
+    <File fileId="33" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc3_diffuse.png" />
+    <File fileId="34" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc3_normal.png" />
+    <File fileId="35" filename="$data/vehicles/poettinger/impress125FPro/impress125FProDisc3_vmask.png" />
+    <File fileId="39" filename="$data/vehicles/poettinger/impress125FPro/impress125FProLights_normal.png" />
+    <File fileId="40" filename="$data/vehicles/poettinger/impress125FPro/impress125FProLights_vmask.png" />
+    <File fileId="36" filename="Impress125FCPro_normal.png" />
+    <File fileId="13" filename="Impress125FCPro_vmask.png" />
+    <File fileId="19" filename="impress125FCProAlpha_diffuse.png" />
+    <File fileId="20" filename="impress125FCProAlpha_normal.png" />
+    <File fileId="21" filename="impress125FCProAlpha_vmask.png" />
+    <File fileId="46" filename="impress125FCProBaleTurnerAlpha_diffuse.png" />
+    <File fileId="47" filename="impress125FCProBaleTurnerAlpha_normal.png" />
+    <File fileId="48" filename="impress125FCProBaleTurnerHoses_vmask.png" />
+    <File fileId="44" filename="impress125FCProBaleTurner_normal.png" />
+    <File fileId="45" filename="impress125FCProBaleTurner_vmask.png" />
+    <File fileId="15" filename="impress125FCProChain_normal.png" />
+    <File fileId="16" filename="impress125FCProChain_vmask.png" />
+    <File fileId="24" filename="impress125FCProDecals_diffuse.png" />
+    <File fileId="17" filename="impress125FCProHoses_normal.png" />
+    <File fileId="18" filename="impress125FCProHoses_vmask.png" />
+    <File fileId="22" filename="impress125FCProRoll_normal.png" />
+    <File fileId="23" filename="impress125FCProRoll_vmask.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="9" alphaBlending="true" customShaderId="14" customShaderVariation="Decal">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="impress125FCProChain_mat" materialId="10" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat0" value="0.0176 0.0176 0.0176 5"/>
+      <CustomParameter name="colorMat1" value="0.6514 0.6584 0.6724 8"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="impress125FCProHoses_mat" materialId="3" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat2" value="0.0176 0.0176 0.0160 5"/>
+      <CustomParameter name="colorMat0" value="1.0000 0.9046 0.0409 5"/>
+      <CustomParameter name="colorMat1" value="1.0000 0.0123 0.0123 5"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="impress125FCProAlpha_mat" materialId="14" alphaBlending="true" customShaderId="14" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat2" value="1.0000 0.0000 0.0000 0"/>
+      <CustomParameter name="colorMat0" value="0.6724 0.6724 0.6724 0"/>
+      <CustomParameter name="colorMat1" value="0.9734 0.3916 0.0000 1"/>
+      <CustomParameter name="colorMat4" value="0.6569 0.6563 0.4540 1"/>
+      <CustomParameter name="colorMat5" value="0.6 0.6 0.6 1.0"/>
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="impress125FCProRoll_mat" materialId="20" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.9 0.9 0.9 1"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="impress125FCProDecals_mat" materialId="12" alphaBlending="true" customShaderId="14" customShaderVariation="Decal">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="assetLibraryStickers_mat" materialId="11" alphaBlending="true" customShaderId="14" customShaderVariation="Decal">
+      <Texture fileId="26"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="impress125FProDisc2_mat" materialId="7" customShaderId="14" customShaderVariation="uvRotate_colorMask">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="impress125FProDisc1_mat" materialId="8" customShaderId="14" customShaderVariation="uvRotate_colorMask">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+    </Material>
+    <Material name="impress125FProDisc3_mat" materialId="19" customShaderId="14" customShaderVariation="uvRotate_colorMask">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="Impress125FCPro_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat3" value="0.9734 0.3916 0.0000 0"/>
+      <CustomParameter name="colorMat2" value="1.0000 0.0000 0.0000 0"/>
+      <CustomParameter name="colorMat0" value="1.0000 0.0000 0.0000 0"/>
+      <CustomParameter name="colorMat1" value="0.9734 0.3916 0.0000 5"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="window_mat" materialId="21" alphaBlending="true" customShaderId="14" customShaderVariation="Window">
+      <Texture fileId="37"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="impress125FProLights_mat" materialId="5" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="4" alphaBlending="true" customShaderId="14" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Texture fileId="41"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="40"/>
+    </Material>
+    <Material name="silageWrap_mat" materialId="13" customShaderId="14" customShaderVariation="backLight_colorMask">
+      <CustomParameter name="colorMat0" value="0.80 0.55 0.05 1.0"/>
+      <CustomParameter name="backLightScale" value="0.35"/>
+      <Texture fileId="42"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="43"/>
+    </Material>
+    <Material name="impress125FCProBaleTurner_mat" materialId="15" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="colorMask">
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+    </Material>
+    <Material name="impress125FCProBaleTurnerAlpha_mat" materialId="18" alphaBlending="true" customShaderId="14" customShaderVariation="Decal_colorMask">
+      <Texture fileId="46"/>
+      <Normalmap fileId="47"/>
+      <Glossmap fileId="45"/>
+    </Material>
+    <Material name="impress125FCProBaleTurnerHoses_mat" materialId="22" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat0" value="0.0176 0.0176 0.0160 5"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="48"/>
+    </Material>
+    <Material name="assetLibraryStickers_mat1" materialId="16" alphaBlending="true" customShaderId="14" customShaderVariation="Decal">
+      <Texture fileId="26"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="45"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat1" materialId="17" alphaBlending="true" customShaderId="14" customShaderVariation="Decal">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="45"/>
+    </Material>
+    <Material name="impress125FCProAlpha_mat1" materialId="6" customShaderId="14" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat2" value="1.0000 0.0000 0.0000 0"/>
+      <CustomParameter name="colorMat0" value="0.6724 0.6724 0.6724 0"/>
+      <CustomParameter name="colorMat1" value="0.9734 0.3916 0.0000 1"/>
+      <CustomParameter name="colorMat4" value="0.6569 0.6563 0.4540 1"/>
+      <CustomParameter name="colorMat5" value="0.6 0.6 0.6 1.0"/>
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="impress125FCPro.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="impress125FCPro_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="impress125FCPro_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 4 74 76 87 90 94 101 113 119 120 123 127 128 129 130 131 132 133 134 135 136 137 138 147 148 151 152 335 336 337 338 344 345 346 347 348 349 350" clipDistance="300" nodeId="2">
+        <TransformGroup name="attachable" nodeId="3">
+          <TransformGroup name="supportTrans01" collision="false" clipDistance="300" nodeId="4">
+            <Shape name="col" translation="0.358418 1.16322 2.6269" visibility="false" shapeId="3" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+          </TransformGroup>
+          <TransformGroup name="pto" nodeId="6">
+            <TransformGroup name="ptoInputNode" translation="-0.000498148 1.34879 2.28148" rotation="-15.795 180 0" nodeId="7"/>
+            <TransformGroup name="ptoDetachNode" translation="-0.000498148 0.942575 3.39359" rotation="-44.0964 180 0" nodeId="8"/>
+          </TransformGroup>
+          <Shape name="drawbar" translation="0 0.789888 3.22922" rotation="14.4274 0 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="9">
+            <TransformGroup name="attacherJoint" translation="1.96815e-07 -0.0789825 0.480863" rotation="0 90 0" nodeId="10"/>
+          </Shape>
+          <TransformGroup name="connectionHoses" nodeId="11">
+            <TransformGroup name="hydraulicIn01" translation="-0.00319993 1.83144 2.89356" rotation="-12.2987 0 0" nodeId="12">
+              <Shape name="hydraulicIn01_detached" translation="0.00319978 0.205116 -2.95077" rotation="12.2987 0 0" scale="1 1 1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="13">
+                <TransformGroup name="hydraulicIn01_connector" translation="0.115764 0.420451 2.84267" rotation="23.0797 -111.211 -92.8597" scale="1 1 1" nodeId="14"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="hydraulicOut01" translation="-0.102645 1.83051 2.85379" rotation="-8.55319 0 0" nodeId="15">
+              <Shape name="hydraulicOut01_detached" translation="0.102644 0.00691539 -2.91841" rotation="8.55319 0 0" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="16">
+                <TransformGroup name="hydraulicOut01_connector" translation="0.115044 0.406034 2.80548" rotation="-113.18 32.2653 8.829" scale="1 1 1" nodeId="17"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="airIn" translation="0.0533655 1.91115 2.83833" rotation="-49.6843 11.8939 -13.6522" nodeId="18">
+              <Shape name="airIn_detached" translation="0.975636 0.845278 -3.16941" rotation="48.2555 -18.032 -8.3621e-16" scale="1 1 1" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="19">
+                <Shape name="airIn_hose" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="20"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="airOut" translation="-0.0533655 1.91115 2.83833" rotation="-49.6578 -11.7863 13.5227" nodeId="21">
+              <Shape name="airOut_detached" translation="-0.966434 0.845278 -3.17223" rotation="48.2555 17.8657 8.35424e-16" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="22">
+                <Shape name="airOut_hose" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="23"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="electric" translation="0.0178398 1.83788 2.89163" rotation="-10.8659 0.230222 -0.305572" nodeId="24">
+              <Shape name="electric_detached" translation="0.00358119 -1.2599 -3.18626" rotation="10.8646 -0.283695 0.256697" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="25">
+                <TransformGroup name="electric_connector" translation="0.113562 1.82012 2.72077" rotation="-110.079 14.1958 16.582" scale="1 1 1" nodeId="26"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="wheels" nodeId="27">
+          <TransformGroup name="wheelFrontLeft" translation="1.2 0.587009 0.0830176" nodeId="28"/>
+          <TransformGroup name="wheelFrontRight" translation="-1.2 0.587009 0.0830176" nodeId="29"/>
+          <TransformGroup name="wheelBackLeft" translation="1.2 0.58701 -1.19846" nodeId="30"/>
+          <TransformGroup name="wheelBackRight" translation="-1.2 0.58701 -1.19846" nodeId="31"/>
+          <TransformGroup name="chockSupport" translation="-0.934685 1.03934 1.04739" rotation="1.82144e-15 -29.1803 89.7088" scale="0.871982 0.871982 0.871982" referenceId="1" collision="false" clipDistance="300" nodeId="32"/>
+          <TransformGroup name="wheelChock01" translation="-0.934656 1.10663 0.925883" rotation="0 -29.18 89.709" scale="0.826514 0.826514 0.826514" referenceId="2" collision="false" clipDistance="300" nodeId="33"/>
+          <TransformGroup name="chockSupport1" translation="0.935 1.03934 1.04739" rotation="0.162638 29.1799 270.042" scale="0.871982 0.871982 0.871982" referenceId="1" collision="false" clipDistance="300" nodeId="34"/>
+          <TransformGroup name="wheelChock02" translation="0.935 1.10663 0.925883" rotation="0.1625 29.1796 -89.9577" scale="0.826514 0.826514 0.826514" referenceId="2" collision="false" clipDistance="300" nodeId="35"/>
+        </TransformGroup>
+        <TransformGroup name="lights" nodeId="36">
+          <TransformGroup name="sharedLights" nodeId="37">
+            <TransformGroup name="yellowRound_02_01" translation="1.29701 0.526633 -2.8178" rotation="0 0 -90" scale="0.915824 0.915824 0.915824" referenceId="3" collision="false" clipDistance="300" nodeId="38"/>
+            <TransformGroup name="yellowRound_02_02" translation="-1.29701 0.526633 -2.8178" rotation="-180 -2.25992e-29 -90" scale="0.915824 0.915824 0.915824" referenceId="3" collision="false" clipDistance="300" nodeId="39"/>
+            <TransformGroup name="yellowRound_02_03" translation="-1.13949 0.930726 1.42468" rotation="-180 -2.25992e-29 -90" referenceId="3" nodeId="40"/>
+            <TransformGroup name="yellowRound_02_04" translation="1.139 0.957779 1.43469" rotation="0 0 -90" referenceId="3" nodeId="41"/>
+            <TransformGroup name="reflectorWhiteRound_02_01" translation="1.26374 0.977798 2.40468" rotation="90 0 0" scale="1.05485 1.05485 1.05485" referenceId="4" collision="false" clipDistance="300" nodeId="42"/>
+            <TransformGroup name="reflectorWhiteRound_02_02" translation="-1.264 0.977798 2.40468" rotation="90 0 0" scale="1.05485 1.05485 1.05485" referenceId="4" collision="false" clipDistance="300" nodeId="43"/>
+            <TransformGroup name="sideMarker03Left" translation="1.29661 0.596256 -2.74459" rotation="0 0 -90" referenceId="5" nodeId="44"/>
+            <TransformGroup name="sideMarker03Right" translation="-1.29701 0.596 -2.745" rotation="0 0 90" referenceId="5" nodeId="45"/>
+            <TransformGroup name="rearMultipointLight_03Left" translation="1.16754 0.560239 -2.78381" rotation="90 180 0" referenceId="6" nodeId="46"/>
+            <TransformGroup name="rearMultipointLight_03Right" translation="-1.168 0.56 -2.784" rotation="-90 0 180" referenceId="6" nodeId="47"/>
+            <TransformGroup name="sideMarker_05Orange_01" translation="1.41599 1.31014 -0.518234" rotation="-90 -90 0" referenceId="7" nodeId="48"/>
+            <TransformGroup name="sideMarker_05Orange_02" translation="-1.41599 1.31014 -0.518234" rotation="-90 -270 0" referenceId="7" nodeId="49"/>
+            <TransformGroup name="sideMarker_05Orange_03" translation="-1.36476 0.977674 2.33644" rotation="-90 -270 0" referenceId="7" nodeId="50"/>
+            <TransformGroup name="sideMarker_05Orange_04" translation="1.36476 0.977674 2.33644" rotation="-90 -90 0" referenceId="7" nodeId="51"/>
+            <TransformGroup name="sideMarker_05White_01" translation="1.3592 0.868896 0.752227" rotation="90 0 0" referenceId="8" nodeId="52"/>
+            <TransformGroup name="sideMarker_05White_02" translation="-1.359 0.868896 0.752227" rotation="90 0 0" referenceId="8" nodeId="53"/>
+            <TransformGroup name="workingLightSquare_02" translation="0.977071 2.15922 -1.64725" rotation="180 15 360" scale="0.909711 0.909711 0.909711" referenceId="9" collision="false" clipDistance="300" nodeId="54"/>
+          </TransformGroup>
+          <TransformGroup name="staticLights" nodeId="55">
+            <Shape name="defaultlight_static" translation="0.917902 1.96393 0.110256" shapeId="12" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="35" nodeId="56"/>
+            <Shape name="workllightBack_static" translation="0.142892 1.91665 0.809191" shapeId="13" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="35" nodeId="57"/>
+            <TransformGroup name="visuals" nodeId="58">
+              <Shape name="lights_static" translation="-0.237725 1.91648 -0.0600668" shapeId="14" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="35" nodeId="59"/>
+              <Shape name="lightsGlass_static" translation="0.142892 1.91665 0.809191" shapeId="15" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="35" nodeId="60"/>
+              <Shape name="lights_static1" translation="1.17381 2.36332 -0.711619" shapeId="16" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="5" clipDistance="35" nodeId="61"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="beaconLight03" translation="0.97308 2.47522 -1.67319" scale="0.9 0.9 0.9" referenceId="10" collision="false" clipDistance="300" nodeId="62"/>
+          <TransformGroup name="backLights" nodeId="63">
+            <Light name="backLightsHigh1" translation="1.15629 0.544398 -2.88788" rotation="-15 20 0" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2" clipDistance="75" nodeId="64">
+              <Light name="backLightsHigh2" translation="-2.18652 0.205975 -0.76871" rotation="0 -40 0" scale="1 1 1" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2" clipDistance="75" nodeId="65"/>
+            </Light>
+          </TransformGroup>
+          <TransformGroup name="turnLights" nodeId="66">
+            <Light name="turnLightLeftBack" translation="1.15629 0.544398 -2.88788" rotation="-8 -10 0" scale="1 1 1" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3" clipDistance="75" nodeId="67"/>
+            <Light name="turnLightRightBack" translation="-1.17056 0.544398 -2.88788" rotation="-8 10 0" scale="1 1 1" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3" clipDistance="75" nodeId="68"/>
+          </TransformGroup>
+          <TransformGroup name="reverseLights" nodeId="69">
+            <Light name="reverseLight" translation="1.16837 0.579298 -2.91311" rotation="-15 0 0" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="150" dropOff="3" clipDistance="75" nodeId="70">
+              <Light name="reverseLight2" translation="-2.33637 0 0" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="150" dropOff="3" clipDistance="75" nodeId="71"/>
+            </Light>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="movingParts" nodeId="72">
+          <TransformGroup name="pickup" nodeId="73">
+            <TransformGroup name="pickup" translation="0 0.608363 1.61059" collision="false" clipDistance="300" nodeId="74">
+              <Shape name="pickupArm02" translation="5.95748e-29 3.48166e-15 0.492049" rotation="131.738 0 180" scale="1 1 1" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="75"/>
+              <TransformGroup name="tines" translation="0.00157043 -0.00567822 0.306546" rotation="9.32989 0 0" collision="false" clipDistance="300" nodeId="76"/>
+              <TransformGroup name="pickupArmRef" translation="0 0.317056 0.384378" rotation="12.8516 0 0" scale="1 1 1" nodeId="77"/>
+              <TransformGroup name="pickupHydraulicRef" translation="0 -0.16376 0.0285729" rotation="6.69224 0 0" nodeId="78"/>
+              <TransformGroup name="effects" nodeId="79">
+                <Shape name="smokeEmitter" translation="6.90893e-79 -0.113879 0.765624" rotation="-15.8582 0 0" scale="1 1 1" shapeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="80"/>
+                <TransformGroup name="pickupEffectNode" translation="2.76995e-16 -0.608363 -1.61059" nodeId="81">
+                </TransformGroup>
+              </TransformGroup>
+              <Shape name="disc02_02" translation="0 -0.339208 -1.68791" rotation="9.32989 0 0" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="300" nodeId="82"/>
+              <Shape name="disc01_03" translation="0 -0.339208 -1.68791" rotation="9.32989 0 0" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="300" nodeId="83"/>
+              <Shape name="screws_decals7" translation="0 -0.339208 -1.68791" rotation="9.32989 0 0" shapeId="21" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="84"/>
+              <Shape name="chain03" translation="0 -0.339208 -1.68791" rotation="9.32989 0 0" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="300" nodeId="85"/>
+              <TransformGroup name="pickupJoint" rotation="9.32989 -0 0" nodeId="86"/>
+            </TransformGroup>
+            <TransformGroup name="pickupArm01" translation="1.24345e-16 0.478317 1.35541" rotation="-32.7273 0 0" collision="false" clipDistance="300" nodeId="87">
+              <TransformGroup name="pickupArm02Ref" translation="9.65423e-15 0.143263 0.614836" rotation="108.341 -9.03968e-29 180" scale="1 1 1" nodeId="88"/>
+              <TransformGroup name="wheelAxisLeft_visRot" translation="1.26897 -0.0661194 0.680784" rotation="4.11648 -0.0387929 -0.0249271" scale="1 1 1" nodeId="89">
+                <TransformGroup name="wheelAxisLeft_vis" translation="2.84217e-16 3.55271e-17 5.68434e-16" scale="1 1 1" collision="false" clipDistance="300" nodeId="90">
+                  <TransformGroup name="leftPickupWheel_visRot" translation="0.0561857 -0.201392 -0.180462" rotation="28.6109 0.0404822 0.0220781" scale="1 1 1" nodeId="91">
+                    <TransformGroup name="leftPickupWheel_vis" translation="0 -1.42109e-16 0" scale="1 1 1" nodeId="92"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="wheelAxisRight_visRot" translation="-1.26897 -0.0661194 0.680784" rotation="4.11648 0.0387871 0.0249306" scale="1 1 1" nodeId="93">
+                <TransformGroup name="wheelAxisRight_vis" translation="-4.26326e-16 1.06581e-16 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="94">
+                  <TransformGroup name="rightPickupWheel_visRot" translation="-0.0559798 -0.201392 -0.180462" rotation="28.6109 -0.0404766 -0.022082" scale="1 1 1" nodeId="95">
+                    <TransformGroup name="rightPickupWheel_vis" translation="0 7.10543e-17 2.84217e-16" scale="1 1 1" nodeId="96"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="visuals" nodeId="97">
+                <Shape name="stickers_decal2" translation="-1.24345e-16 0.330404 -1.39884" rotation="32.7273 0 0" shapeId="23" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" clipDistance="30" nodeId="98"/>
+                <Shape name="impress125FCProAlpha_main5" translation="-1.24345e-16 0.330404 -1.39884" rotation="32.7273 0 0" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="99"/>
+                <Shape name="screws_decals5" translation="-1.24345e-16 0.330404 -1.39884" rotation="32.7273 0 0" shapeId="25" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="100"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="pickupArm" translation="0 1.01819 1.37549" rotation="3.52173 0 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="101">
+              <TransformGroup name="orientationLine" nodeId="102">
+                <TransformGroup name="orientationLinePart01" translation="0 -0.0164139 0.504989" rotation="-3.52173 0 0" scale="1 1 1" nodeId="103"/>
+                <TransformGroup name="orientationLinePart02" translation="0 0.001362 0.530836" rotation="-3.52173 0 0" scale="1 1 1" nodeId="104"/>
+                <TransformGroup name="orientationLinePart03" translation="0 0.000147247 0.587324" rotation="-3.52173 0 0" scale="1 1 1" nodeId="105"/>
+                <TransformGroup name="orientationLinePart04" translation="0 -0.00980953 0.644498" rotation="-3.52173 0 0" scale="1 1 1" nodeId="106"/>
+                <TransformGroup name="orientationLinePart05" translation="0 -0.027734 0.699712" rotation="-3.52173 0 0" scale="1 1 1" nodeId="107"/>
+                <TransformGroup name="orientationLinePart06" translation="0 -0.0858938 0.799859" rotation="-3.52173 0 0" scale="1 1 1" nodeId="108"/>
+                <TransformGroup name="orientationLinePart07" translation="0 -0.124966 0.842792" rotation="-3.52173 0 0" scale="1 1 1" nodeId="109"/>
+                <TransformGroup name="orientationLinePart08" translation="0 -0.169703 0.879785" rotation="-3.52173 0 0" scale="1 1 1" nodeId="110"/>
+                <TransformGroup name="orientationLinePart09" translation="0 -0.219208 0.910101" rotation="-3.52173 0 0" scale="1 1 1" nodeId="111"/>
+                <TransformGroup name="orientationLinePart10" translation="0 -0.272712 0.933227" rotation="-3.52173 0 0" scale="1 1 1" nodeId="112"/>
+              </TransformGroup>
+              <TransformGroup name="pickupRotationPart01" translation="0 -0.190009 1.02606" rotation="-3.52173 0 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="113"/>
+              <TransformGroup name="visuals" nodeId="114">
+                <Shape name="screws_decals6" translation="0 -1.10076 -1.31035" rotation="-3.52173 0 0" scale="1 1 1" shapeId="26" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="115"/>
+                <Shape name="impress125FCProAlpha_main7" translation="0 -1.10076 -1.31035" rotation="-3.52173 0 0" scale="1 1 1" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="116"/>
+              </TransformGroup>
+              <TransformGroup name="pickupArmJoint" rotation="-3.52173 0 0" nodeId="117"/>
+            </TransformGroup>
+            <TransformGroup name="pickupRefFrame" translation="0 0.608363 1.61059" rotation="-9.32989 0 0" nodeId="118"/>
+            <TransformGroup name="pickupHydraulic" translation="0 0.514518 0.992696" rotation="6.19159 0 0" collision="false" clipDistance="300" nodeId="119">
+              <TransformGroup name="pickupHydraulicPunch" translation="0 -3.43725e-15 0.675064" collision="false" clipDistance="300" nodeId="120"/>
+              <TransformGroup name="pickupHydraulicJoint" rotation="-6.19159 0 0" nodeId="121"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="backDoor" nodeId="122">
+            <TransformGroup name="backDoor" translation="8.45718e-05 2.23728 0.432045" collision="false" clipDistance="300" nodeId="123">
+              <TransformGroup name="backDoorHydraulicRef" translation="-8.45718e-05 -0.26414 -0.548541" rotation="132.685 -0.00288809 180" scale="1 1 1" nodeId="124"/>
+              <TransformGroup name="backDoorArm02Ref" translation="0.585586 0.142085 -0.186783" rotation="9.75958 180 0" scale="1 1 1" nodeId="125"/>
+              <TransformGroup name="rolls" nodeId="126">
+                <TransformGroup name="roll03" translation="-0.000251369 -1.41512 -0.268675" collision="false" clipDistance="300" nodeId="127"/>
+                <TransformGroup name="roll04" translation="-0.000251369 -1.36397 -0.484908" collision="false" clipDistance="300" nodeId="128"/>
+                <TransformGroup name="roll05" translation="-0.000251369 -1.23265 -0.677912" collision="false" clipDistance="300" nodeId="129"/>
+                <TransformGroup name="roll06" translation="-0.000251369 -1.04737 -0.81992" collision="false" clipDistance="300" nodeId="130"/>
+                <TransformGroup name="roll07" translation="-0.000251369 -0.826863 -0.896569" collision="false" clipDistance="300" nodeId="131"/>
+                <TransformGroup name="roll08" translation="-0.000251369 -0.593445 -0.900105" collision="false" clipDistance="300" nodeId="132"/>
+                <TransformGroup name="roll09" translation="-0.000251369 -0.370722 -0.830171" collision="false" clipDistance="300" nodeId="133"/>
+                <TransformGroup name="roll10" translation="-0.000251369 -0.181222 -0.69384" collision="false" clipDistance="300" nodeId="134"/>
+                <TransformGroup name="roll11" translation="-0.000251369 -0.0441128 -0.504903" collision="false" clipDistance="300" nodeId="135"/>
+                <TransformGroup name="roll12" translation="-0.000251369 0.0202959 -0.234789" collision="false" clipDistance="300" nodeId="136"/>
+              </TransformGroup>
+              <TransformGroup name="backDoorPart01" translation="-0.687184 0.079034 0.0757929" rotation="60.6682 179.215 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="137">
+                <TransformGroup name="backDoorPart02" translation="8.24577e-15 -5.0937e-15 0.127674" rotation="-100.853 0.384771 -0.68479" scale="1 1 1" collision="false" clipDistance="300" nodeId="138"/>
+              </TransformGroup>
+              <TransformGroup name="backDoorPart01RefFrame" translation="-0.687184 0.079034 0.0757929" rotation="60.6682 179.215 0" scale="1 1 1" nodeId="139"/>
+              <TransformGroup name="visuals" nodeId="140">
+                <Shape name="Impress125FCPro_decals1" translation="-8.45718e-05 -2.23728 -0.432045" shapeId="28" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="100" nodeId="141"/>
+                <Shape name="disc01_02" translation="-8.45718e-05 -2.23728 -0.432045" shapeId="29" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="300" nodeId="142"/>
+                <Shape name="impress125FCProAlpha_main2" translation="-8.45718e-05 -2.23728 -0.432045" shapeId="30" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="143"/>
+                <Shape name="screws_decals1" translation="-8.45718e-05 -2.23728 -0.432045" shapeId="31" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="144"/>
+              </TransformGroup>
+              <Shape name="chain01" translation="-8.45718e-05 -2.23728 -0.432045" shapeId="32" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="300" nodeId="145"/>
+              <TransformGroup name="backDoorJoint" nodeId="146"/>
+            </TransformGroup>
+            <TransformGroup name="backDoorHydraulic" translation="2.90298e-05 1.34871 0.459417" rotation="132.685 -0.00288809 180" scale="1 1 1" collision="false" clipDistance="300" nodeId="147">
+              <TransformGroup name="backDoorHydraulicPunch" translation="1.82438e-13 2.95586e-14 0.849465" collision="false" clipDistance="300" nodeId="148"/>
+              <TransformGroup name="backDoorHydraulicJoint" rotation="132.685 0.00195804 179.998" nodeId="149"/>
+            </TransformGroup>
+            <TransformGroup name="backDoorArm01RefFrame" translation="0.585671 2.33167 0.604876" rotation="115.731 -3.53113e-31 180" scale="1 1 1" nodeId="150"/>
+            <TransformGroup name="backDoorArm01" translation="0.585671 2.33167 0.604876" rotation="155.127 0 180" scale="1 1 1" collision="false" clipDistance="300" nodeId="151">
+              <TransformGroup name="backDoorArm02" translation="-7.10543e-17 3.4639e-15 0.189986" rotation="34.6322 0 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="152">
+                <Shape name="screws_decals3" translation="0.585671 -2.30336 0.835049" rotation="9.75958 180 0" scale="1 1 1" shapeId="33" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="153"/>
+              </TransformGroup>
+              <Shape name="screws_decals4" translation="0.585671 -2.36981 -0.431933" rotation="155.127 0 180" scale="1 1 1" shapeId="34" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="154"/>
+              <TransformGroup name="backDoorArm01Joint" rotation="155.127 -0 180" nodeId="155"/>
+            </TransformGroup>
+            <TransformGroup name="backDoorPart02Ref" translation="-0.686242 2.23699 0.407443" rotation="139.817 0 180" scale="1 1 1" nodeId="156"/>
+          </TransformGroup>
+          <TransformGroup name="wrapper" nodeId="157">
+            <Shape name="baleWrapBase" translation="0 0.637729 -2.70419" shapeId="35" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="158 211 239 241 242 245 246 251 253 254 257 258 263 264 265 266 270 312 313 315 316 318 319 323 324 326 327" clipDistance="300" nodeId="158">
+              <TransformGroup name="baleWrapNodeRot" translation="2.28882e-05 0.918908 -0.190319" rotation="0 90 0" scale="1 1 1" nodeId="159">
+                <TransformGroup name="baleWrapNode" nodeId="160">
+                  <TransformGroup name="baleWrapLinkNode" rotation="0 0 -116.789" scale="1 1 1" nodeId="161">
+                  </TransformGroup>
+                  <TransformGroup name="baleGrabberNodeRot" translation="0 0 -8.67362e-21" rotation="0 0 -116.789" nodeId="162">
+                    <TransformGroup name="baleGrabberNode" nodeId="163">
+                      <Shape name="baleGrabberTrigger" scale="1 1 1" visibility="false" shapeId="36" kinematic="true" compound="true" trigger="true" collisionMask="16777216" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="164"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="baleWrapNodeFoil" nodeId="165">
+                  <TransformGroup name="joints" nodeId="166">
+                    <TransformGroup name="jointsLeft" rotation="0 -90 0" nodeId="167">
+                      <TransformGroup name="wrapJointLeft01" translation="-0.0986906 0.437924 -0.0579099" rotation="0 90 0" nodeId="168"/>
+                      <TransformGroup name="wrapJointLeft02" translation="-0.0986906 0.311153 -0.0579099" rotation="0 90 0" nodeId="169"/>
+                      <TransformGroup name="wrapJointLeft03" translation="-0.0986906 0.184382 -0.0579099" rotation="0 90 0" nodeId="170"/>
+                      <TransformGroup name="wrapJointLeft04" translation="-0.0986906 0.0576109 -0.0579099" rotation="0 90 0" nodeId="171"/>
+                      <TransformGroup name="wrapJointLeft05" translation="-0.0986906 -0.0691603 -0.0579099" rotation="0 90 0" nodeId="172"/>
+                      <TransformGroup name="wrapJointLeft06" translation="-0.0986906 -0.195932 -0.0579099" rotation="0 90 0" nodeId="173"/>
+                      <TransformGroup name="wrapJointLeft07" translation="-0.0986906 -0.322703 -0.0579099" rotation="0 90 0" nodeId="174"/>
+                      <TransformGroup name="leftOverJointLeft08" translation="-0.0989375 0.437924 -0.189907" rotation="0 90 0" nodeId="175"/>
+                      <TransformGroup name="leftOverJointLeft09" translation="-0.099031 0.311153 -0.191211" rotation="0 90 0" nodeId="176"/>
+                      <TransformGroup name="leftOverJointLeft10" translation="-0.0989375 0.184382 -0.189907" rotation="0 90 0" nodeId="177"/>
+                      <TransformGroup name="leftOverJointLeft11" translation="-0.099031 0.0576109 -0.191211" rotation="0 90 0" nodeId="178"/>
+                      <TransformGroup name="leftOverJointLeft12" translation="-0.099031 -0.0691603 -0.191211" rotation="0 90 0" nodeId="179"/>
+                      <TransformGroup name="leftOverJointLeft13" translation="-0.099031 -0.195932 -0.191211" rotation="0 90 0" nodeId="180"/>
+                      <TransformGroup name="leftOverJointLeft14" translation="-0.0989375 -0.322703 -0.189907" rotation="0 90 0" nodeId="181"/>
+                      <TransformGroup name="leftOverJointLeft01" translation="0.54845 0.437925 -0.189851" rotation="0 -90 0" nodeId="182"/>
+                      <TransformGroup name="leftOverJointLeft02" translation="0.54845 0.311153 -0.191265" rotation="0 -90 0" nodeId="183"/>
+                      <TransformGroup name="leftOverJointLeft03" translation="0.54845 0.184382 -0.19118" rotation="0 -90 0" nodeId="184"/>
+                      <TransformGroup name="leftOverJointLeft04" translation="0.548451 0.0576108 -0.191157" rotation="0 -90 0" nodeId="185"/>
+                      <TransformGroup name="leftOverJointLeft05" translation="0.54845 -0.0691605 -0.191295" rotation="0 -90 0" nodeId="186"/>
+                      <TransformGroup name="leftOverJointLeft06" translation="0.548451 -0.195932 -0.191241" rotation="0 -90 0" nodeId="187"/>
+                      <TransformGroup name="leftOverJointLeft07" translation="0.548451 -0.322703 -0.191217" rotation="0 -90 0" nodeId="188"/>
+                    </TransformGroup>
+                    <TransformGroup name="jointsRight" rotation="0 -90 0" nodeId="189">
+                      <TransformGroup name="wrapJointRight01" translation="0.0984042 0.437924 0.0563962" rotation="0 -90 0" nodeId="190"/>
+                      <TransformGroup name="wrapJointRight02" translation="0.0984042 0.311153 0.0563962" rotation="0 -90 0" nodeId="191"/>
+                      <TransformGroup name="wrapJointRight03" translation="0.0984042 0.184382 0.0563962" rotation="0 -90 0" nodeId="192"/>
+                      <TransformGroup name="wrapJointRight04" translation="0.0984042 0.0576108 0.0563962" rotation="0 -90 0" nodeId="193"/>
+                      <TransformGroup name="wrapJointRight05" translation="0.0984042 -0.0691603 0.0563962" rotation="0 -90 0" nodeId="194"/>
+                      <TransformGroup name="wrapJointRight06" translation="0.0984042 -0.195932 0.0563962" rotation="0 -90 0" nodeId="195"/>
+                      <TransformGroup name="wrapJointRight07" translation="0.0984042 -0.322703 0.0563962" rotation="0 -90 0" nodeId="196"/>
+                      <TransformGroup name="leftOverJointRight08" translation="0.0983852 0.437924 0.167071" rotation="0 -90 0" nodeId="197"/>
+                      <TransformGroup name="leftOverJointRight09" translation="0.0983852 0.311153 0.167071" rotation="0 -90 0" nodeId="198"/>
+                      <TransformGroup name="leftOverJointRight10" translation="0.0983852 0.184382 0.167071" rotation="0 -90 0" nodeId="199"/>
+                      <TransformGroup name="leftOverJointRight11" translation="0.0983852 0.0576108 0.167071" rotation="0 -90 0" nodeId="200"/>
+                      <TransformGroup name="leftOverJointRight12" translation="0.0983852 -0.0691603 0.167071" rotation="0 -90 0" nodeId="201"/>
+                      <TransformGroup name="leftOverJointRight13" translation="0.0983852 -0.195932 0.167071" rotation="0 -90 0" nodeId="202"/>
+                      <TransformGroup name="leftOverJointRight14" translation="0.0983852 -0.322703 0.167071" rotation="0 -90 0" nodeId="203"/>
+                      <TransformGroup name="leftOverJointRight01" translation="-0.548497 0.437924 0.165726" rotation="0 90 0" nodeId="204"/>
+                      <TransformGroup name="leftOverJointRight02" translation="-0.548497 0.311149 0.167068" rotation="0 90 0" nodeId="205"/>
+                      <TransformGroup name="leftOverJointRight03" translation="-0.548497 0.184382 0.167149" rotation="0 90 0" nodeId="206"/>
+                      <TransformGroup name="leftOverJointRight04" translation="-0.548497 0.0576111 0.16707" rotation="0 90 0" nodeId="207"/>
+                      <TransformGroup name="leftOverJointRight05" translation="-0.548497 -0.06916 0.167061" rotation="0 90 0" nodeId="208"/>
+                      <TransformGroup name="leftOverJointRight06" translation="-0.548497 -0.195931 0.167066" rotation="0 90 0" nodeId="209"/>
+                      <TransformGroup name="leftOverJointRight07" translation="-0.548497 -0.322702 0.16707" rotation="0 90 0" nodeId="210"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="baleWrapArms" translation="-2.27737e-05 0.0691833 -0.189812" collision="false" clipDistance="300" nodeId="211">
+                <TransformGroup name="jointOrigins" nodeId="212">
+                  <TransformGroup name="wrapJointLeft01Origin" translation="1.17355 1.28765 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="213"/>
+                  <TransformGroup name="wrapJointLeft02Origin" translation="1.17847 1.16088 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="214"/>
+                  <TransformGroup name="wrapJointLeft03Origin" translation="1.17818 1.03411 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="215"/>
+                  <TransformGroup name="wrapJointLeft04Origin" translation="1.17847 0.907335 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="216"/>
+                  <TransformGroup name="wrapJointLeft05Origin" translation="1.17847 0.780564 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="217"/>
+                  <TransformGroup name="wrapJointLeft06Origin" translation="1.17847 0.653793 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="218"/>
+                  <TransformGroup name="wrapJointLeft07Origin" translation="1.17847 0.527022 -0.0545706" rotation="0 78.3639 0" scale="1 1 1" nodeId="219"/>
+                  <TransformGroup name="wrapJointRight01Origin" translation="-1.17155 1.28765 0.0545816" rotation="0 -116.813 0" scale="1 1 1" nodeId="220"/>
+                  <TransformGroup name="wrapJointRight02Origin" translation="-1.1787 1.16088 0.0545816" rotation="0 -116.813 0" scale="1 1 1" nodeId="221"/>
+                  <TransformGroup name="wrapJointRight03Origin" translation="-1.1787 1.03411 0.0545816" rotation="0 -116.813 0" scale="1 1 1" nodeId="222"/>
+                  <TransformGroup name="wrapJointRight04Origin" translation="-1.1787 0.907335 0.0545816" rotation="0 -116.813 0" scale="1 1 1" nodeId="223"/>
+                  <TransformGroup name="wrapJointRight05Origin" translation="-1.17531 0.780564 0.0525314" rotation="0 -116.813 0" scale="1 1 1" nodeId="224"/>
+                  <TransformGroup name="wrapJointRight06Origin" translation="-1.17391 0.653793 0.0509628" rotation="0 -116.813 0" scale="1 1 1" nodeId="225"/>
+                  <TransformGroup name="wrapJointRight07Origin" translation="-1.17337 0.527022 0.0515829" rotation="0 -116.813 0" scale="1 1 1" nodeId="226"/>
+                  <TransformGroup name="leftOverJointsLeftRefFrame" translation="1.17818 1.28765 -0.0584171" rotation="0 -120.637 0" scale="1 1 1" nodeId="227"/>
+                  <TransformGroup name="leftOverJointsRightRefFrame" translation="-1.17859 1.28765 0.055889" rotation="0 61.1801 0" scale="1 1 1" nodeId="228"/>
+                  <TransformGroup name="wrapJointLeft01Ref" translation="1.17699 0.906149 -0.0584171" rotation="0 90 0" scale="1 1 1" nodeId="229"/>
+                </TransformGroup>
+                <TransformGroup name="visuals" nodeId="230">
+                  <Shape name="baleWrap" translation="2.27737e-05 -0.0691833 0.189812" shapeId="37" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="300" nodeId="231"/>
+                  <Shape name="alpha_parts" translation="2.27737e-05 -0.706912 2.894" shapeId="38" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="300" nodeId="232"/>
+                  <Shape name="sticker_decals" translation="2.27737e-05 -0.706912 2.894" shapeId="39" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" clipDistance="30" nodeId="233"/>
+                  <Shape name="screw_decals" translation="2.27737e-05 -0.706912 2.894" shapeId="40" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="234"/>
+                  <Shape name="decals" translation="2.27737e-05 -0.706912 2.894" shapeId="41" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="100" nodeId="235"/>
+                  <Shape name="alpha_parts1" translation="2.27737e-05 -0.706912 2.894" shapeId="42" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="236"/>
+                </TransformGroup>
+                <TransformGroup name="wrapperRootJoint" nodeId="237"/>
+              </TransformGroup>
+              <TransformGroup name="leftFoilCutterArm01Rot" translation="0.898732 0.283072 -0.487635" rotation="-0.330291 -4.00008 -9.34054e-05" scale="1 1 1" nodeId="238">
+                <TransformGroup name="leftFoilCutterArm01" translation="-1.13687e-15 -2.84217e-16 3.97904e-15" scale="1 1 1" collision="false" clipDistance="300" nodeId="239">
+                  <TransformGroup name="leftFoilCutterArm02RefFrame" translation="-0.00323146 0.161801 0.738262" rotation="-0.38514 0.05633 0.000417914" scale="1 1 1" nodeId="240">
+                    <TransformGroup name="leftFoilCutterArm02" translation="-5.68434e-16 -7.10543e-16 -8.52651e-16" scale="1 1 1" collision="false" clipDistance="300" nodeId="241">
+                      <TransformGroup name="leftFoilCutterArm03" translation="8.74809e-08 -2.99326e-08 0.204929" rotation="40.7385 180.008 0.000104505" scale="1 1 1" collision="false" clipDistance="300" nodeId="242"/>
+                      <TransformGroup name="leftFoilCutterArm02HydraulicRef" translation="0.000233367 -0.0427349 0.0515129" rotation="-7.80917 -0.0563791 -0.000704029" scale="1 1 1" nodeId="243"/>
+                      <Shape name="screw_decals" translation="-0.673124 -1.11809 2.495" rotation="0.717136 3.94344 0.0493212" scale="1 1 1" shapeId="43" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="244"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="leftFoilCutterArm02Hydraulic" translation="-0.0029464 0.06227 0.393237" rotation="-8.19431 -5.2595e-05 9.28762e-05" scale="1 1 1" collision="false" clipDistance="300" nodeId="245">
+                    <TransformGroup name="leftFoilCutterArm02HydraulicPunch" translation="-7.10543e-16 3.41061e-15 0.400917" collision="false" clipDistance="300" nodeId="246"/>
+                  </TransformGroup>
+                  <Shape name="screw_decals" translation="-0.673887 -0.939503 3.24138" rotation="0.331105 4.00001 0.0231902" shapeId="44" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="247"/>
+                  <Shape name="blade" translation="-0.0376714 0.122728 0.02827" rotation="0.331105 4.00001 0.0231902" shapeId="45" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="248"/>
+                </TransformGroup>
+                <TransformGroup name="leftFoilCutterArm03Ref" translation="-0.00324467 -0.00391951 0.751798" rotation="41.1237 180.065 0.000466162" scale="1 1 1" nodeId="249">
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="rightFoilCutterArm01Rot" translation="-0.898717 0.283073 0.108084" rotation="179.67 4.00027 -180" nodeId="250">
+                <TransformGroup name="rightFoilCutterArm01" translation="5.68434e-16 -1.42109e-16 4.54747e-15" scale="1 1 1" collision="false" clipDistance="300" nodeId="251">
+                  <TransformGroup name="rightFoilCutterArm02RefFrame" translation="-0.00322923 0.161801 0.738262" rotation="-0.385097 0.0564643 0.000465446" scale="1 1 1" nodeId="252">
+                    <TransformGroup name="rightFoilCutterArm02" translation="0 9.9476e-16 5.68434e-16" scale="1 1 1" collision="false" clipDistance="300" nodeId="253">
+                      <TransformGroup name="rightFoilCutterArm03" translation="2.06944e-07 -5.15406e-08 0.204929" rotation="40.7386 180.008 0.000104605" scale="1 1 1" collision="false" clipDistance="300" nodeId="254"/>
+                      <TransformGroup name="rightFoilCutterArm02HydraulicRef" translation="0.000233359 -0.042735 0.0515127" rotation="-7.80924 -0.0563418 -0.000703521" scale="1 1 1" nodeId="255"/>
+                      <Shape name="screw_decals" translation="-1.07119 -1.046 -3.27877" rotation="179.283 -3.94349 -179.951" scale="1 1 1" shapeId="46" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="256"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="rightFoilCutterArm02Hydraulic" translation="-0.00294517 0.0622698 0.393237" rotation="-8.19434 0.000119087 0.000140623" scale="1 1 1" collision="false" clipDistance="300" nodeId="257">
+                    <TransformGroup name="rightFoilCutterArm02HydraulicPunch" translation="4.9738e-14 2.84217e-15 0.400917" collision="false" clipDistance="300" nodeId="258"/>
+                  </TransformGroup>
+                  <Shape name="screw_decals" translation="-1.07763 -0.90622 -2.53235" rotation="179.669 -4.0002 -179.977" scale="1 1 1" shapeId="47" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="259"/>
+                  <Shape name="blade" translation="-0.0371471 0.122706 0.0321148" rotation="179.669 -4.0002 -179.977" scale="1 1 1" shapeId="48" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="260"/>
+                </TransformGroup>
+                <TransformGroup name="rightFoilCutterArm03Ref" translation="-0.00324219 -0.00392581 0.751791" rotation="41.1237 180.065 0.000513744" scale="1 1 1" nodeId="261">
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="animationNodes" translation="2.30408e-05 0.760707 2.89657" nodeId="262">
+                <TransformGroup name="wrapperRoll01" translation="-9.34601e-06 -0.432004 -2.59772" collision="false" clipDistance="300" nodeId="263"/>
+                <TransformGroup name="wrapperRoll02" translation="9.04083e-06 -0.433073 -3.57746" collision="false" clipDistance="300" nodeId="264"/>
+                <TransformGroup name="wrapGear01" translation="0.290669 -0.702513 -2.93137" collision="false" clipDistance="300" nodeId="265"/>
+                <TransformGroup name="wrapGear02" translation="-0.290416 -0.702513 -2.93137" collision="false" clipDistance="300" nodeId="266"/>
+              </TransformGroup>
+              <Shape name="wrapBelt" translation="-0.000114918 0.328313 -0.191072" shapeId="49" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="300" nodeId="267"/>
+              <TransformGroup name="configurations" nodeId="268">
+                <Shape name="defaultConfiguration" visibility="false" shapeId="50" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="269">
+                  <TransformGroup name="wrapperRoll03" translation="0.00213772 0.464583 -0.855557" collision="false" clipDistance="300" nodeId="270"/>
+                </Shape>
+                <Shape name="baleTurnerConfiguration" translation="0 -0.637729 2.70419" shapeId="51" castsShadows="true" receiveShadows="true" materialIds="15" skinBindNodeIds="271 273 275 277 282 285 286 290 291" clipDistance="300" nodeId="271">
+                  <TransformGroup name="baleTurnerComponentJoint" translation="1.69407e-23 1.09096 -3.55599" scale="1 1 1" nodeId="272"/>
+                  <TransformGroup name="baleTurnerRot" translation="5.0822e-23 1.09096 -3.55599" rotation="0 180 0" collision="false" clipDistance="300" nodeId="273">
+                    <TransformGroup name="baleTurnerArm01RefFrame" translation="-0.5975 -0.0109638 0.151015" rotation="-51.0977 1.5297e-06 -90" scale="1 1 1" nodeId="274">
+                      <TransformGroup name="baleTurnerArm01" translation="2.84217e-16 -5.68434e-16 2.84217e-16" scale="1 1 1" collision="false" clipDistance="300" nodeId="275">
+                        <TransformGroup name="baleTurnerArm02RefFrame" translation="-3.00609e-08 -8.39017e-09 1.10702" rotation="-120.972 -2.15108e-06 0" scale="1 1 1" nodeId="276">
+                          <TransformGroup name="baleTurnerArm02" translation="2.84217e-16 -4.26326e-16 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="277">
+                            <TransformGroup name="baleTurnerArm02HydraulicRef" translation="-0.0109648 0.0431425 0.498343" rotation="-180 -81.08 -90" scale="1 1 1" nodeId="278"/>
+                            <Shape name="sticker_decals" translation="-0.00596489 1.67167e-05 -3.45164e-05" rotation="0 0 90" scale="1 1 1" shapeId="52" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="16" clipDistance="30" nodeId="279"/>
+                            <Shape name="screw_decals" translation="-0.00596489 1.67167e-05 -3.45164e-05" rotation="0 0 90" scale="1 1 1" shapeId="53" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17" clipDistance="30" nodeId="280"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="baleTurnerArm03Rot" translation="0.0436216 -0.109454 1.17046" rotation="177.289 8.84033 -140.365" scale="1 1 1" nodeId="281">
+                          <TransformGroup name="baleTurnerArm03" translation="2.27374e-15 -1.42109e-15 -1.13687e-15" scale="1 1 1" collision="false" clipDistance="300" nodeId="282">
+                            <TransformGroup name="baleTurnerArm03HydraulicRef" translation="-0.02903 0.0193679 0.0956646" rotation="-92.1117 0.0611603 89.9036" scale="1 1 1" nodeId="283"/>
+                            <Shape name="screw_decals" translation="-2.84217e-16 2.84217e-16 -1.13687e-15" shapeId="54" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17" clipDistance="30" nodeId="284"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="baleTurnerArm03Hydraulic" translation="0.0547266 -0.042079 0.643112" rotation="-1.10856 -2.72441 130.156" scale="1 1 1" collision="false" clipDistance="300" nodeId="285">
+                          <TransformGroup name="baleTurnerArm03HydraulicPunch" translation="-1.2874e-08 4.81159e-10 0.438871" scale="1 1 1" collision="false" clipDistance="300" nodeId="286"/>
+                          <TransformGroup name="baleTurnerArm03HydraulicJoint" rotation="-178.634 48.2923 140.912" nodeId="287"/>
+                        </TransformGroup>
+                        <Shape name="screw_decals" translation="-5.6552e-16 -1.13687e-15 2.71051e-20" scale="1 1 1" shapeId="55" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17" clipDistance="30" nodeId="288"/>
+                        <TransformGroup name="baleTurnerArm01Joint" rotation="2.47751e-06 128.902 90" nodeId="289"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="baleTurnerArm02Hydraulic" translation="-0.578989 1.10626e-06 0.0834874" rotation="4.82967e-06 73.15 -1.30802e-21" scale="1 1 1" collision="false" clipDistance="300" nodeId="290">
+                      <TransformGroup name="baleTurnerArm02HydraulicPunch" translation="-7.10543e-14 2.44346e-10 0.907995" collision="false" clipDistance="300" nodeId="291"/>
+                      <TransformGroup name="baleTurnerArm02HydraulicJoint" rotation="1.66617e-05 106.85 1.59463e-05" nodeId="292"/>
+                    </TransformGroup>
+                    <TransformGroup name="baleTurnerArmsRef" translation="0.371626 0 0.0757968" nodeId="293"/>
+                    <Shape name="alpha_decal" translation="6.12556e-23 -1.42109e-16 -2.0961e-15" shapeId="56" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="18" clipDistance="30" nodeId="294"/>
+                    <Shape name="screw_decal" translation="4.93992e-23 -1.42109e-16 -1.65201e-15" shapeId="57" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="17" clipDistance="30" nodeId="295"/>
+                    <Shape name="stickers_decal" translation="4.93992e-23 -1.42109e-16 -1.65201e-15" shapeId="58" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="16" clipDistance="30" nodeId="296"/>
+                    <TransformGroup name="baleTurnerRotJoint" rotation="0 180 0" nodeId="297"/>
+                  </TransformGroup>
+                  <TransformGroup name="baleTurnerRotRefFrame" translation="5.0822e-23 1.09096 -3.55599" rotation="0 180 0" scale="1 1 1" nodeId="298"/>
+                  <Shape name="sticker_decals" translation="2.85879e-23 1.09096 -3.55599" scale="1 1 1" shapeId="59" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="16" clipDistance="30" nodeId="299"/>
+                  <TransformGroup name="baleTurnerConfigurationJoint" nodeId="300"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="baleDropperHydraulicRef" translation="1.18606e-16 -0.178684 -0.0956003" rotation="5.04376 180 0" nodeId="301"/>
+              <TransformGroup name="visuals" nodeId="302">
+                <Shape name="screw_decals" translation="0 -0.637729 2.70419" shapeId="60" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="303"/>
+              </TransformGroup>
+              <TransformGroup name="collisions" translation="0 -0.637729 2.70419" visibility="false" nodeId="304">
+                <Shape name="colPart06" translation="0 1.04554 -2.83503" shapeId="61" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="305"/>
+                <Shape name="colPart05" translation="-1.18705 1.66709 -3.37535" shapeId="62" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="306"/>
+                <Shape name="colPart04" translation="-1.18761 1.66709 -2.51871" shapeId="63" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="307"/>
+                <Shape name="colPart03" translation="1.16252 1.66709 -2.44387" shapeId="64" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="308"/>
+                <Shape name="colPart02" translation="1.21402 1.66709 -3.185" shapeId="65" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="309"/>
+                <Shape name="colPart01" translation="0 0.687557 -2.95688" shapeId="66" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="310"/>
+              </TransformGroup>
+              <TransformGroup name="baleWrapBaseJoint" nodeId="311"/>
+            </Shape>
+            <TransformGroup name="baleDropperHydraulic" translation="1.29247e-28 0.512512 -2.19398" rotation="5.04376 180 0" collision="false" clipDistance="300" nodeId="312">
+              <TransformGroup name="baleDropperHydraulicPunch" translation="7.71678e-14 -2.77112e-15 0.608162" collision="false" clipDistance="300" nodeId="313"/>
+              <TransformGroup name="baleDropperHydraulicJoint" rotation="5.04376 180 0" nodeId="314"/>
+            </TransformGroup>
+            <TransformGroup name="baleMoverTrans" collision="false" clipDistance="300" nodeId="315">
+              <TransformGroup name="baleMoverRot" translation="0 0.73251 -1.31198" collision="false" clipDistance="300" nodeId="316">
+                <TransformGroup name="baleMoverSidePlatesRefFrame" translation="0 0.129998 0.354998" rotation="17.1731 0 0" nodeId="317">
+                  <TransformGroup name="baleMoverSidePlates" collision="false" clipDistance="300" nodeId="318">
+                    <TransformGroup name="baleMoverSidePlatesArm" translation="1.00974e-30 -1.20792e-15 0.0961778" rotation="31.6597 180 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="319"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="baleMoverHydraulic02Ref" translation="3.52369e-17 0.0557317 0.126914" rotation="142.728 0 180" nodeId="320"/>
+                <TransformGroup name="visuals" nodeId="321">
+                  <Shape name="screws_decals10" translation="0 -0.73251 1.31198" shapeId="67" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="322"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="baleMoverHydraulic01" translation="0.0010291 0.631179 -1.4957" rotation="12.3102 -0.071164 0" scale="1 1 1" collision="false" clipDistance="300" nodeId="323">
+                <TransformGroup name="baleMoverHydraulic01Punch" translation="-3.01525e-14 -7.14095e-15 0.84216" collision="false" clipDistance="300" nodeId="324"/>
+                <TransformGroup name="baleMoverHydraulic01Joint" rotation="-12.3102 0.0695278 -0.0151725" nodeId="325"/>
+              </TransformGroup>
+              <TransformGroup name="baleMoverHydraulic02" translation="0 0.500511 -0.806982" rotation="142.728 0 180" collision="false" clipDistance="300" nodeId="326">
+                <TransformGroup name="baleMoverHydraulic02Punch" translation="-9.69337e-28 1.21858e-14 0.475118" collision="false" clipDistance="300" nodeId="327"/>
+                <TransformGroup name="baleMoverHydraulic02Joint" rotation="142.728 -0 180" nodeId="328"/>
+              </TransformGroup>
+              <TransformGroup name="baleMoverSidePlatesRef" translation="-7.5196e-15 0.73751 -1.23898" rotation="14.4866 180 0" scale="1 1 1" nodeId="329"/>
+              <TransformGroup name="visuals" nodeId="330">
+                <Shape name="screws_decals8" shapeId="68" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="331"/>
+              </TransformGroup>
+              <TransformGroup name="baleMoverTransJoint" nodeId="332"/>
+            </TransformGroup>
+            <TransformGroup name="baleMoverHydraulic01Ref" translation="7.146e-06 0.451626 -0.6729" rotation="12.3102 -0.071164 0" scale="1 1 1" nodeId="333"/>
+          </TransformGroup>
+          <TransformGroup name="animationNodes" nodeId="334">
+            <TransformGroup name="rotor02" translation="0.000462723 1.16709 1.09436" collision="false" clipDistance="300" nodeId="335"/>
+            <TransformGroup name="rotor01" translation="0.000462646 0.722921 1.20971" collision="false" clipDistance="300" nodeId="336"/>
+            <TransformGroup name="auger02" translation="0 0.713353 1.53524" collision="false" clipDistance="300" nodeId="337"/>
+            <TransformGroup name="auger01" translation="-3.8147e-08 0.868596 1.59173" collision="false" clipDistance="300" nodeId="338"/>
+            <Shape name="disc01_01" shapeId="69" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="300" nodeId="339"/>
+            <Shape name="disc02_01" shapeId="70" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="300" nodeId="340"/>
+            <Shape name="disc03_01" shapeId="71" castsShadows="true" receiveShadows="true" materialIds="19" clipDistance="300" nodeId="341"/>
+            <Shape name="chain02" shapeId="72" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="300" nodeId="342"/>
+            <TransformGroup name="rolls" nodeId="343">
+              <TransformGroup name="roll01" translation="0 0.834246 0.677469" collision="false" clipDistance="300" nodeId="344"/>
+              <TransformGroup name="roll02" translation="-0.000166798 0.822164 0.379112" collision="false" clipDistance="300" nodeId="345"/>
+              <TransformGroup name="roll13" translation="0.00039629 2.23728 0.432045" collision="false" clipDistance="300" nodeId="346"/>
+              <TransformGroup name="roll14" translation="0.000443859 2.1118 0.698269" collision="false" clipDistance="300" nodeId="347"/>
+              <TransformGroup name="roll15" translation="0.000443859 1.96086 0.846436" collision="false" clipDistance="300" nodeId="348"/>
+              <TransformGroup name="roll16" translation="0.000443859 1.77374 0.94434" collision="false" clipDistance="300" nodeId="349"/>
+              <TransformGroup name="roll17" translation="0.000443859 1.53311 0.985177" collision="false" clipDistance="300" nodeId="350"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="workAreas" nodeId="351">
+          <TransformGroup name="workAreaStart" translation="1.25 0 2" nodeId="352"/>
+          <TransformGroup name="workAreaWidth" translation="-1.25 0 2" nodeId="353"/>
+          <TransformGroup name="workAreaHeight" translation="1.25 0 1.68315" nodeId="354"/>
+        </TransformGroup>
+        <TransformGroup name="liftupEffectNode" nodeId="355">
+        </TransformGroup>
+        <TransformGroup name="componentJointPickup" translation="0 0.478317 1.35541" nodeId="356"/>
+        <TransformGroup name="baler" nodeId="357">
+          <TransformGroup name="wrapperBaleDropAnimNode" nodeId="358"/>
+          <TransformGroup name="baleScaleNode" translation="0 0.889457 0.258045" nodeId="359">
+            <TransformGroup name="baleAnimRootNode" translation="0 0.63972 0" rotation="0 90 0" nodeId="360">
+              <TransformGroup name="baleAnimNode" scale="1 1 1" nodeId="361">
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="balerBaleNode" nodeId="362"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="363">
+          <Shape name="impress125FCProAlpha_main" shapeId="73" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="364"/>
+          <Shape name="impress125FCProRoll" shapeId="74" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="300" nodeId="365"/>
+          <Shape name="Impress125VCProGlass1" translation="0.987261 1.50686 1.57297" shapeId="75" castsShadows="true" receiveShadows="true" materialIds="21" clipDistance="300" nodeId="366"/>
+          <Shape name="Impress125VCProGlass" translation="-0.106986 1.65468 2.5192" shapeId="76" castsShadows="true" receiveShadows="true" materialIds="21" clipDistance="300" nodeId="367"/>
+          <Shape name="stickers_decal" shapeId="77" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" clipDistance="30" nodeId="368"/>
+          <Shape name="screws_decals" shapeId="78" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="9" clipDistance="30" nodeId="369"/>
+          <Shape name="Impress125FCPro_decals" shapeId="79" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="100" nodeId="370"/>
+          <Shape name="hoses" translation="-1.52588e-07 1.4033 -0.0331869" shapeId="80" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="371"/>
+          <Shape name="impress125FCProAlpha_main8" translation="-0.556916 1.10308 2.28031" shapeId="81" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="372"/>
+          <Shape name="impress125FCProAlpha_main9" translation="-0.557187 1.40766 2.26195" shapeId="82" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="373"/>
+          <Shape name="impress125FCProAlpha_main10" translation="-0.55697 1.69129 2.36793" shapeId="83" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="374"/>
+          <Shape name="impress125FCProAlpha_main11" translation="0.677454 1.10308 2.28031" shapeId="84" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="375"/>
+          <Shape name="impress125FCProAlpha_main12" translation="0.677508 1.40766 2.26195" shapeId="85" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="376"/>
+          <Shape name="impress125FCProAlpha_main13" translation="0.677508 1.69129 2.36793" shapeId="86" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="377"/>
+          <Shape name="Impress125FCPro2_decal" shapeId="87" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="100" nodeId="378"/>
+          <Shape name="Impress125FCPro_decals2" translation="-0.107121 1.65476 2.51877" shapeId="88" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="100" nodeId="379"/>
+          <Shape name="impress125FCProAlpha_main14" translation="0.0131885 1.7587 2.58698" shapeId="89" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="380"/>
+        </TransformGroup>
+        <TransformGroup name="rootJoint" nodeId="381"/>
+        <TransformGroup name="licensePlate" translation="0.973007 2.31727 -1.59348" rotation="0 180 0" nodeId="382">
+          <TransformGroup name="licensePlateRef" translation="0.117453 0 -1.43839e-17" nodeId="383"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="skinnedMeshs" nodeId="384">
+        <Shape name="rubber" translation="1.52588e-07 1.45527 0.00257065" shapeId="90" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="381 86" clipDistance="300" nodeId="385"/>
+        <Shape name="hoses1" translation="-1.52588e-07 1.4033 -0.0331869" shapeId="91" castsShadows="true" receiveShadows="true" materialIds="3" skinBindNodeIds="381 155 149 146 121" clipDistance="300" nodeId="386"/>
+        <Shape name="hoses2" translation="-1.52588e-07 1.4033 -0.0331869" shapeId="92" castsShadows="true" receiveShadows="true" materialIds="3" skinBindNodeIds="328 325 332 381" clipDistance="300" nodeId="387"/>
+        <Shape name="hosesBaleTurner" shapeId="93" castsShadows="true" receiveShadows="true" materialIds="22" skinBindNodeIds="292 287 381 297 300 289" clipDistance="300" nodeId="388"/>
+        <Shape name="chainAlpha" shapeId="94" castsShadows="true" receiveShadows="true" materialIds="6" skinBindNodeIds="381 117" clipDistance="300" nodeId="389"/>
+        <Shape name="wrapFoilLeft" translation="1.23375 1.61317 -3.06639" shapeId="95" castsShadows="true" receiveShadows="true" materialIds="13" skinBindNodeIds="168 169 170 171 172 173 174 237" clipDistance="250" nodeId="390"/>
+        <Shape name="wrapFoilRight" translation="-1.27482 1.61317 -2.36413" shapeId="96" castsShadows="true" receiveShadows="true" materialIds="13" skinBindNodeIds="190 191 192 193 194 195 196 237" clipDistance="250" nodeId="391"/>
+        <Shape name="leftOverFoilLeft" translation="1.23375 1.61317 -3.1995" shapeId="97" castsShadows="true" receiveShadows="true" materialIds="13" skinBindNodeIds="182 183 184 185 187 186 188 175 176 177 178 179 180 181" clipDistance="250" nodeId="392"/>
+        <Shape name="leftOverFoilRight" translation="-1.27482 1.61317 -2.25337" shapeId="98" castsShadows="true" receiveShadows="true" materialIds="13" skinBindNodeIds="204 205 206 207 208 209 210 197 198 199 200 201 202 203" clipDistance="250" nodeId="393"/>
+        <Shape name="hoses3" translation="-1.52588e-07 1.4033 -0.0331869" shapeId="99" castsShadows="true" receiveShadows="true" materialIds="3" skinBindNodeIds="314 311 381" clipDistance="300" nodeId="394"/>
+      </TransformGroup>
+      <TransformGroup name="collisons" nodeId="395">
+        <Shape name="colPart06" translation="0 0.557089 -1.94891" visibility="false" shapeId="100" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="396"/>
+      </TransformGroup>
+    </Shape>
+    <Shape name="impress125FCPro_pickup_component2" translation="0 0.660672 1.91437" shapeId="101" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="397">
+      <TransformGroup name="groundReferenceNode" translation="0 -0.199007 0.118697" nodeId="398"/>
+      <TransformGroup name="pickupArm01Ref" translation="-3.15544e-32 0.188188 0.0176127" rotation="-32.7273 0 0" nodeId="399"/>
+      <TransformGroup name="wheelAxisRightRot" translation="-1.269 0.130082 0.0494953" rotation="-28.6108 -0.0461113 0" scale="1 1 1" nodeId="400">
+        <TransformGroup name="wheelAxisRight" translation="1.42109e-16 -3.55271e-17 0" scale="1 1 1" nodeId="401">
+          <TransformGroup name="rightPickupWheelRot" translation="-0.0560498 -0.201435 -0.180382" rotation="9.23162 0.0404808 0.0220808" scale="1 1 1" nodeId="402">
+            <TransformGroup name="rightPickupWheel" translation="-2.84217e-16 0 8.52651e-16" scale="1 1 1" nodeId="403"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="wheelAxisLeftRot" translation="1.26897 0.130082 0.0494953" rotation="-28.6108 -0.0461113 3.05939e-06" scale="1 1 1" nodeId="404">
+        <TransformGroup name="wheelAxisLeft" translation="0 -3.19744e-16 0" scale="1 1 1" nodeId="405">
+          <TransformGroup name="leftPickupWheelRot" translation="0.0561857 -0.201392 -0.180462" rotation="9.23162 0.0404822 0.0220781" scale="1 1 1" nodeId="406">
+            <TransformGroup name="leftPickupWheel" translation="-2.84217e-16 7.10543e-17 2.84217e-16" scale="1 1 1" nodeId="407"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+    <Shape name="impress125FCPro_baleTurner_component3" translation="0 1.06125 -3.64007" shapeId="102" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="408">
+      <TransformGroup name="baleTurnerArm01ColRot" translation="0.5975 0.0187462 -0.0669306" rotation="128.902 -1.5297e-06 -90" scale="1 1 1" nodeId="409">
+        <Shape name="baleTurnerArm01Col" scale="1 1 1" visibility="false" shapeId="103" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="410">
+          <TransformGroup name="baleTurnerArm03ColRot" translation="0.0436216 -0.109454 1.17046" rotation="177.289 8.84033 -140.365" scale="1 1 1" nodeId="411">
+            <Shape name="baleTurnerArm03Col" translation="-8.52651e-16 -5.68434e-16 2.27374e-15" scale="1 1 1" shapeId="104" compoundChild="true" density="0.001" collisionMask="8194" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="412"/>
+          </TransformGroup>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="baleTurnerRotRef" translation="-8.3951e-08 0.02971 -3.06035" rotation="0 180 0" scale="1 1 1" nodeId="413"/>
+    </Shape>
+  </Scene>
+
+
+  <Animation externalAnimFile="impress125FCPro.i3d.anim" />
+  <UserAttributes>
+    <UserAttribute nodeId="32">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="34">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="35">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="38">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/yellowRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="yellowRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/yellowRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="yellowRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/yellowRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="yellowRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="41">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/yellowRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="yellowRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/whiteRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="reflectorWhiteRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/reflectors/lizard/whiteRound_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="reflectorWhiteRound_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="44">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_03.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker03Left"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="45">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_03.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker03Right"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="46">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearMultipointLight_03.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="rearMultipointLight_03Left"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="47">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearMultipointLight_03.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="rearMultipointLight_03Right"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="48">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05Orange.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05Orange"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="49">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05Orange.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05Orange"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="50">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05Orange.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05Orange"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05Orange.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05Orange"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="52">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05White.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05White"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="53">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/sideMarker_05White.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="sideMarker_05White"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="54">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/workingLightSquare_02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="workingLightSquare_02"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="62">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/beaconLights/lizard/beaconLight03.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="beaconLight03"/>
+      <Attribute name="i3d_refBrand" type="string" value="lizard"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="86">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="117">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="121">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="146">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="149">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="155">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="168">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="169">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="171">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="172">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="173">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="174">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="175">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="176">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="177">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="178">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="179">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="180">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="181">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="182">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="183">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="184">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="185">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="186">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="187">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="188">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="190">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="191">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="192">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="193">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="194">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="195">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="196">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="197">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="198">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="199">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="200">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="201">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="202">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="203">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="204">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="205">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="206">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="207">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="208">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="209">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="210">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="237">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="287">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="289">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="292">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="297">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="300">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="311">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="314">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="325">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="328">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="332">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="381">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

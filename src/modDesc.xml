@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>Aoi[trix]</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Pöttinger Impress 125 FC Pro AoiEdition</en>
+    </title>
+    <description>
+        <en>
+            <![CDATA[Price: 78.500 €
+Max. working speed: 17 kph
+Required power: 130 hp
+Equipped with a Prechamber
+]]>
+</en>
+        <de>
+            <![CDATA[Preis: 78.500 €
+Arbeitsgeschwindigkeit: 17 km/h
+Benötigte Leistung: 130 PS
+Ausgestattet mit einer Vorkammer
+]]>
+</de>
+    </description>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="impress125FCPro.xml" />
+    </storeItems>
+
+    <l10n>
+        <text name="configuration_wrapperBaleOnEnd">
+            <en>With Bale on End Turner</en>
+            <de>Mit Ballendreher</de>
+            <it>Con verticalizzatore</it>
+            <fr>Avec kit de déchargement vertical</fr>
+            <es>Con paca en el volteador final</es>
+            <br>Com Fardo na Extremidade</br>
+            <cs>将草垛放在尾部翻堆机上</cs>
+            <ct>將草捆放在尾部翻堆機上</ct>
+            <cz>S obracením hotových balíků</cz>
+            <ea>Con paca en el volteador final</ea>
+            <hu>Bálafelállítóval</hu>
+            <jp>端の回転機にベール</jp>
+            <kr>엔드 터너에 짚더미 사용</kr>
+            <pl>Z obracarką bel</pl>
+            <nl>Met baaldraaier op einde</nl>
+            <pt>Com Fardo na Extremidade</pt>
+            <ro>Cu balot la răsucitorul final</ro>
+            <ru>С переворачивателем</ru>
+            <tr>Balya Çevirici Mekanizmalı</tr>
+        </text>
+    </l10n>
+</modDesc>
